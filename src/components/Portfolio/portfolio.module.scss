@@ -1,20 +1,27 @@
 .parent {
+    height: 100vh;
+    align-items: center;
     position: relative;
     display: flex;
     justify-content: center;
     // top: 1200px;
+    width: 1000px;
+    margin: auto;
+
     .porfolio {
         margin: auto;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        width: 100%;
     }
 
     .portfolio_text {
-        // width:234px;
-        height: 200px;
-        display: grid;
+        width: 285px;
+        // height: 200px;
+        display: flex;
+        flex-direction: column;
 
         .porfolio_link {
             font-family: SF Pro Display;
@@ -45,65 +52,128 @@
             letter-spacing: 0em;
             text-align: left;
             color: #8A8886;
-            width: 380px;
+            // width: 380px;
         }
     }
 
     .portfolio_image {
-        .fortfolio_images_0 {
-            display: block;
-            width: 600px;
-            height: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 690px;
+        gap: 33px;
+        justify-content: center;
+        // padding-right: 90px;
 
-            overflow: hidden;
-            .portfolio_image_2{
-                margin-top: -80px;
+        .lol1 {
+            &::after {
+                content: '02'!important;
+            }
+        }
+        .lol2 {
+            &::after {
+                content: '03'!important;
             }
         }
 
-        .portfolio_image_1 {
-            width: 585px;
-            border-radius: 20px;
+        .img_block {
+            &::after {
+                content: '01';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                color: #8A8886;
+                font-family: SF Pro Display;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
             display: flex;
             align-items: center;
-            justify-content: center;
-            height: 120%;
-            font-size: 5em;
+            position: relative;
+            width: 690px;
+            height: 442px;
+            overflow: hidden;
+
+            .portfolio_image {
+                width: calc(100% - 70px);
+                height: unset !important;
+                border-radius: 20px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                transform-origin: top center;
+                box-shadow: 0px -6px 94px 0px #000;
+                transition: .05s;
+            }
+
+            .portfolio_image.c1 {
+                z-index: 3;
+            }
+
+            .portfolio_image.c2 {
+                bottom: 30px;
+                z-index: 2;
+                transform: scale(.9);
+            }
+
+            .portfolio_image.c3 {
+                bottom: 60px;
+                z-index: 1;
+                transform: scale(.8);
+            }
+
+            .scroll_block {
+                width: 10px;
+                height: 360px;
+                flex-shrink: 0;
+                border-radius: 5px;
+                background: #121212;
+                position: absolute;
+                right: 36px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+
+                &::after {
+                    transition: all 2s;
+                    position: absolute;
+                    content: '';
+                    width: 10px;
+                    height: 74px;
+                    flex-shrink: 0;
+                    border-radius: 5px;
+                    background: #7153FF;
+                }
+            }
         }
 
-        .portfolio_image_3 {
-            width: 580px;
-            height: 300px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            // height: 100%;
-            font-size: 5em;
-        }
+
 
         .portfolio_image_link {
-            width: 620px;
+            width: 100%;
+            padding-right: 70px;
             display: flex;
             justify-content: center;
             gap: 2rem;
-            padding: 19px;
+            // padding-top: 70px;
         }
 
 
         .portfolio_link_images {
-            position: relative;
+            position: absolute;
             left: 50px;
         }
 
-        .portfolio_link_2 {
-            font-family: SF Pro Display;
-            font-size: 15px;
-            font-weight: 500;
-            line-height: 18px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: #f4f4f4;
+        .portfolio_link.c1 {
+            position: relative;
         }
 
         .portfolio_link {
