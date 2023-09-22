@@ -1,0 +1,51 @@
+header {
+    .nav {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+        color: var(--white);
+
+        .nav_block:nth-child(2) {
+            justify-content: center;
+            gap: 50px;
+            display: flex;
+
+            span {
+                font-size: 15px;
+                cursor: pointer;
+                transition: all linear 0.3s;
+                border-radius: 0;
+
+            }
+        }
+
+        button {
+            width: 166px;
+            height: 42px;
+            background: var(--green);
+            color: var(--white);
+            border-radius: 8px;
+            border: none;
+        }
+
+    }
+}
+.burger{
+    display: none;
+}
+@media (max-width:760px) {
+    header .nav .nav_block:nth-child(2) {
+        display: none;
+    }
+    header .nav .nav_block:last-child button {
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    header {
+        .nav {
+            width: 90%;
+        }}
+}           

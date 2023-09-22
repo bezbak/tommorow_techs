@@ -1,0 +1,19 @@
+:root{
+  --green:#2B9F6F;
+  --white:white;
+  --purple:#7153FF;
+  --discount-dark:#020202;
+  --discount-light:#7153FF;
+
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./assets/fonts/San Francisco Pro Display/SF-Pro-Display-Light.otf') ,
+       
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'SF Pro Display';
+}

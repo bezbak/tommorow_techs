@@ -1,0 +1,33 @@
+.freeConsultation{
+    width: 100vw;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--purple);
+    color: white;
+    z-index: 9;
+    button{
+     background: none;
+     border: none;
+     outline: none;
+     color: white;  
+    }
+}
+.beginning{
+    position: relative;
+}
+.relative{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+    height: 3000px;
+    width: 100vw;
+}

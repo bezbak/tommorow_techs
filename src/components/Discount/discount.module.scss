@@ -1,0 +1,149 @@
+.discount {
+    .discount_wrap {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    background: var(--discount-dark);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 76px;
+    z-index: 6;
+
+    overflow: hidden;
+.discount_block:first-child{
+    position: relative;
+    .discount_sliders{
+        position: absolute;
+        left: -350px;
+        width: fit-content;
+    }
+}
+
+    .discount_block:nth-child(2) {
+        margin-right: 50px;
+        font-size: 27px;
+        font-weight: 700;
+    }
+
+    .discount_block:nth-child(3) {
+        margin-right: 36px;
+        width: 315px;
+        height: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        background: white;
+        border-radius: 10px;
+        color: black;
+        font-weight: 600;
+        position: relative;
+        z-index: 3;
+    }
+
+    .discount_block:nth-child(4)  {
+        position: relative;
+        button{
+            width: 171px;
+            height: 41px;
+            border-radius: 10px;
+            border: none;
+            font-size: 18px;
+            font-weight: 600;
+        }   
+        img{
+            position: absolute;
+            right:-200px;
+            top: -50%;
+            animation: infinite 3s linear movement;
+            @keyframes movement {
+                0%{
+                  transform: translateY(0);
+                }
+                50%{
+                  transform: translateY(-7px);
+                }
+                100%{
+                  transform: translateY(0);
+                }
+              }
+        }
+    }
+
+    .abstractLenses {
+        position: absolute;
+        bottom: -10px;
+        z-index: 4;
+        animation: infinite 4s ease-in movement2;
+
+        @keyframes movement2 {
+            0%{
+              transform: translateY(0);
+            }
+            50%{
+              transform: translateY(5px) rotate(5deg)  translateX(-5px);
+              
+            }
+            100%{
+              transform: translateY(0);
+            }
+          }
+
+    }
+
+    .bloorCircle {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 0;
+        animation: infinite 6s ease-in movement3;
+
+        @keyframes movement3 {
+            0%{
+              transform: translateY(0);
+            }
+            50%{
+              transform: translateY(1px) translateX(-50px);
+              
+            }
+            100%{
+              transform: translateY(0);
+            }
+          }
+    }
+
+    .discount_slider {
+    
+    }
+
+    .discount_slider {
+        position: absolute;
+        left: -10%;
+        display: flex;
+        gap: 8px;
+        width: 431px;
+        height: 23px;
+        background: #000;
+        transform: rotate(-39.669deg);
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.171);
+
+    }
+
+   
+    .discount_slider:last-child {
+        transform: rotate(-25.313deg);
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+        
+    }
+   
+}

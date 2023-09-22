@@ -1,0 +1,20 @@
+.banner{
+ background: url(./bg-website-min.png.png);   
+ height: 934px;
+ padding-top: 40px;
+ background-repeat: no-repeat;
+ background-size: cover;
+ .discount_wrap{
+    height: 76px;   
+ }
+}
+@media (max-width:1200px) {
+   .discount_wrap{
+      width: 100%;
+   }
+}
+@media (max-width:760px) {
+   .discount_wrap{
+      display: none;
+   }
+}
