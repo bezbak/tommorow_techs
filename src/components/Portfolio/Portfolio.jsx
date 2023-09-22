@@ -29,7 +29,7 @@ const Portfolio = () => {
           end: "+=5000",
           scrub: true,
           pin: true,
-          anticipatePin: 1,
+          anticipatePin: 2,
           // markers: true,
         },
       });

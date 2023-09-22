@@ -15,7 +15,7 @@ const Advantages = () => {
     };
   }, []);
   return (
-    <div className={`size-1400 ${scss.advantages}`}>
+    <div className={`size-1400 ${scss.advantages} advantages`}>
       <div className={scss.advantages_text}>
         <h3>Ну кароче тут текст про преимущества</h3>
         <h1>In Chronicle everything is made

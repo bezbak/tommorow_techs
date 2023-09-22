@@ -9,7 +9,7 @@ import numberIcon from '../img/number.svg';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer + ' footer'}>
       
       <div className={styles.logoContainer}>
         <img src={logoIcon} alt="Логотип" className={styles.logo} />
