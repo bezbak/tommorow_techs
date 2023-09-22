@@ -1,4 +1,5 @@
 .parent {
+    transition: none!important;
     height: 100vh;
     align-items: center;
     position: relative;
@@ -111,7 +112,7 @@
                 margin: auto;
                 transform-origin: top center;
                 box-shadow: 0px -6px 94px 0px #000;
-                transition: .05s;
+                // transition: .05s;
             }
 
             .portfolio_image.c1 {
