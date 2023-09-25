@@ -1,0 +1,35 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  /*background: url(./../../ServicesPage/img/portfolioImg_services-page.png);
+  max-width: 1200px;
+  width: 100%;
+  height: 600px;*/
+  display: flex;
+}
+.swiper-pagination {
+  bottom: var(--swiper-pagination-bottom, 70px) !important;
+  left: -50px !important;
+  text-align: right !important;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px) !important;
+  margin-right: 56px;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: #d9d9d9;
+}
+
+.swiper-pagination-bullet-active {
+  color: #d9d9d9;
+  background: #7153ff;
+}
