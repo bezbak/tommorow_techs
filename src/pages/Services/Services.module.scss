@@ -1,0 +1,133 @@
+.relative{
+    background-color: #020202;
+    margin-bottom: 1500px;
+    padding-top: 44px;
+    position: relative;
+    z-index:1;
+}
+
+.Services {
+  position: relative;
+  &__slider {
+    padding: 64px 0 54px;
+  }
+}
+
+.Innovation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 60px;
+  > h2 {
+    max-width: calc(var(--index) * 27);
+    width: 100%;
+    color: #f1f1ef;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  > a {
+    display: flex;
+    padding: 10px 55px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid var(--purple);
+    background: var(--purple);
+
+    color: var(--White);
+    font-family: SF Pro Display;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      background: transparent;
+      color: var(--purple);
+    }
+  }
+}
+
+.Line {
+  display: flex;
+  justify-content: center;
+  padding: 54px 0 28px;
+}
+
+.DevelopmentServices {
+  display: flex;
+  flex-direction: column;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  > h1 {
+    color: #faf7f8;
+    font-family: SF Pro Display;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 54px;
+  }
+}
+
+.InTouch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  > h2 {
+    max-width: 620px;
+    color: #fff;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 55px; /* 134.146% */
+  }
+  > div {
+    display: flex;
+    gap: 30px;
+    > a {
+      width: max-content;
+      &:nth-child(1) {
+        display: flex;
+        padding: 9px 28.11px;
+        align-items: center;
+        gap: 16px;
+        border-radius: 6px;
+        border: 1px solid var(--purple);
+        background: var(--purple);
+        color: #fff;
+        font-family: SF Pro Display;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      &:nth-child(2) {
+        display: flex;
+        padding: 9px 28.11px;
+        align-items: center;
+        gap: 16px;
+        border-radius: 6px;
+        border: 1px solid var(--purple);
+        color: #fff;
+        font-family: SF Pro Display;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}

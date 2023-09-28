@@ -4,7 +4,7 @@
   --purple:#7153FF;
   --discount-dark:#020202;
   --discount-light:#7153FF;
-
+  --index: calc(1vw + 1vh);
 }
 @font-face {
   font-family: 'SF Pro Display';
@@ -16,4 +16,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'SF Pro Display';
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
 }
