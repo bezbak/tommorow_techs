@@ -21,9 +21,9 @@ const Beginning = () => {
         <Progres />
         <Portfolio />
         <AdaptiveBlock />
-          <Advantages />
+        <Advantages />
       </div>
-        <Footer />
+      <Footer />
     </div>
   )
 }
