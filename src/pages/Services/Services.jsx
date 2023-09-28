@@ -204,30 +204,45 @@ const Services = () => {
   ]
   return (
     <div className={scss.Services}>
-      <Header />
-      <section className={`size-1200 ${scss.Services__slider}`}>
-        <Slider children={sliderContent} />
-      </section>
-      <section className={`size-1200 ${scss.Innovation}`}>
-        <h2>
-          Инновационные IT-решения
-          для развития вашего бизнеса
-        </h2>
-        <a href="#">Выбрать услугу</a>
-      </section>
-      <section className={`size-1200 ${scss.Feedback}`}>
-        <Feedback/>
-      </section>
-      <div className={scss.Line}>
-        <img src="./src/components/ServicesPage/img/Line.png" alt="" />
-      </div>
-      <section className={`size-1200 ${scss.DevelopmentServices}`}>
-        <h1>Услуги разработок</h1>
-        <div>
-          <Cards children={cardsContent} />
+      <div className={scss.relative}>
+        <Header />
+        <section className={`size-1200 ${scss.Services__slider}`}>
+          <Slider children={sliderContent} />
+        </section>
+        <section className={`size-1200 ${scss.Innovation}`}>
+          <h2>
+            Инновационные IT-решения
+            для развития вашего бизнеса
+          </h2>
+          <a href="#services">Выбрать услугу</a>
+        </section>
+        <section className={`size-1200 ${scss.Feedback}`}>
+          <Feedback />
+        </section>
+        <div className={scss.Line}>
+          <img src="./src/components/ServicesPage/img/Line.png" alt="" />
         </div>
-      </section>
-      {/*<Footer />*/}
+        <section id='services' className={`size-1200 ${scss.DevelopmentServices}`}>
+          <h1>Услуги разработок</h1>
+          <div>
+            <Cards children={cardsContent} />
+          </div>
+        </section>
+        <div className={scss.Line}>
+          <img src="./src/components/ServicesPage/img/Line.png" alt="" />
+        </div>
+        <section className={scss.InTouch}>
+          <h2>
+            Мы всегда остаемся на связи
+            для обсуждения ваших проектов
+          </h2>
+          <div>
+            <Link> <img src="./src/components/ServicesPage/img/compass.svg" alt="" />Связаться с нами</Link>
+            <Link> <img src="./src/components/ServicesPage/img/home.svg" alt="" />Вернуться домой</Link>
+          </div>
+        </section>
+      </div>
+      <Footer />
     </div>
   );
 }
