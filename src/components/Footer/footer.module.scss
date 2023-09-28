@@ -17,14 +17,14 @@
 }
 
 .footer {
-    z-index: 0;
-    bottom: 0;left: 0;
-    position: fixed;
+    // z-index: 0;
+    // bottom: 0;left: 0;
+    // position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    padding-top: 120px;
+    padding-top: 300px;
     background: #edebe9;
     width: 100%;
     .text {
@@ -33,15 +33,7 @@
         font-weight: 500;
         line-height: 25px;
     }
-    .footer_top {
-        margin-top: -60px;
-        width: calc(100% - 8px);
-        border-radius: 40px;
-        height: 120px;
-        margin-bottom: 75px;
-        background: #020202;
     
-    }
     
     .logoContainer {
         padding-bottom: 125px;
@@ -218,26 +210,14 @@
 
 @media (max-width:1000px){
     .footer{
-        .footerText{
-            display: none;
-        }
-        .footer_top{
-            margin-top: -100px;
-            width: calc(100% + 128px - 80px);
-        }
+        
         padding: 64px;
+        padding-top: 300px;
         .content{
             flex-wrap: wrap;
             justify-content: center;
             gap:50px 165px;
-            .text{
-                // width: 50%;
-                // display: flex;
-                // justify-content: end;
-            }
-            .links{
-                // width: 50%;
-            }
+
         }
     }
 }
