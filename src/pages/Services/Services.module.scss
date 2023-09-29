@@ -1,26 +1,28 @@
-.relative{
-    background-color: #020202;
-    margin-bottom: 1500px;
-    padding-top: 44px;
-    position: relative;
-    z-index:1;
-}
+//.relative{
+//    background-color: #020202;
+//    margin-bottom: 1500px;
+//    padding-top: 44px;
+//    position: relative;
+//    z-index:1;
+//}
 
 .Services {
-  position: relative;
+  padding-top: 44px;
   &__slider {
+    width: 100% !important;
     padding: 64px 0 54px;
   }
 }
 
 .Innovation {
+  width: 100% !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
   padding-bottom: 60px;
   > h2 {
-    max-width: calc(var(--index) * 27);
+    max-width: 580px;
     width: 100%;
     color: #f1f1ef;
     text-align: center;
@@ -53,6 +55,10 @@
   }
 }
 
+.Feedback {
+  width: 100% !important;
+}
+
 .Line {
   display: flex;
   justify-content: center;
@@ -60,6 +66,7 @@
 }
 
 .DevelopmentServices {
+  padding: 0px 120px;
   display: flex;
   flex-direction: column;
   > div {
@@ -84,6 +91,7 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  margin-bottom: 295px;
   > h2 {
     max-width: 620px;
     color: #fff;
@@ -97,6 +105,7 @@
   > div {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
     > a {
       width: max-content;
       &:nth-child(1) {
@@ -128,6 +137,66 @@
         font-weight: 500;
         line-height: normal;
       }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .Services {
+    &__slider {
+      padding: 64px 30px 44px;
+    }
+  }
+  .Innovation {
+    > h2 {
+      max-width: 406px;
+      font-size: 26px;
+    }
+  }
+  .InTouch {
+    padding: 0px 52px;
+    margin-bottom: 132px;
+    > h2 {
+      max-width: 511px;
+      width: 100%;
+      font-size: 32px;
+      line-height: unset;
+    }
+    > div {
+      justify-content: center;
+      gap: 12px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .DevelopmentServices {
+    > h1 {
+      font-size: 32px;
+    }
+    padding: 0px 30px;
+    > div {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(2, 48.6%);
+      grid-gap: 18px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .DevelopmentServices {
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .Innovation{
+    >h2{
+      max-width: 217px;
     }
   }
 }

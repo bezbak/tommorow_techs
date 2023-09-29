@@ -33,3 +33,12 @@
   color: #d9d9d9;
   background: var(--purple);
 }
+
+
+@media (max-width: 760px) {
+  .swiper-pagination{
+    display: flex;
+    bottom: var(--swiper-pagination-bottom, 25px) !important;
+    left: 25px !important;
+  }
+}

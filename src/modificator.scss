@@ -18,3 +18,10 @@
     margin: auto;
 }
 }
+
+@media (max-width: 400px) {
+  .size-1200{
+    width: 340px;
+    margin: 0 auto;
+  }
+}

@@ -203,7 +203,8 @@ const Services = () => {
     }
   ]
   return (
-    <div className={scss.Services}>
+    <>
+    <div className={` ${scss.Services}`}>
       <div className={scss.relative}>
         <Header />
         <section className={`size-1200 ${scss.Services__slider}`}>
@@ -222,7 +223,7 @@ const Services = () => {
         <div className={scss.Line}>
           <img src="./src/components/ServicesPage/img/Line.png" alt="" />
         </div>
-        <section id='services' className={`size-1200 ${scss.DevelopmentServices}`}>
+        <section id='services' className={` ${scss.DevelopmentServices}`}>
           <h1>Услуги разработок</h1>
           <div>
             <Cards children={cardsContent} />
@@ -242,8 +243,9 @@ const Services = () => {
           </div>
         </section>
       </div>
-      <Footer />
     </div>
+    <Footer/>
+    </>
   );
 }
 

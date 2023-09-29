@@ -35,3 +35,23 @@
     }
   }
 }
+
+@media (max-width: 760px) {
+  .Feedback {
+    gap: 90px;
+    > div {
+      > h3 {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .Feedback {
+    flex-direction: column-reverse;
+    > div {
+      padding: 0 40px;
+    }
+  }
+}

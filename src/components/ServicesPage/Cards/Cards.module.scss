@@ -91,3 +91,56 @@
     }
   }
 }
+
+@media (max-width: 1050px) {
+  .Card {
+    //width: 50%;
+    flex-direction: column-reverse;
+    padding: 40px 0;
+    align-items: center;
+    &__right {
+      align-items: center;
+      gap: 18px;
+      > div {
+        width: 100%;
+        justify-content: center !important;
+        padding-right: 0 !important;
+        &:nth-child(2) {
+          > img {
+            width: calc(var(--index) * 20.69);
+          }
+        }
+      }
+    }
+    &__info {
+      justify-content: flex-end;
+      padding: 0 25px;
+      width: 100%;
+      > h5 {
+        font-size: 32px;
+      }
+      > p {
+        font-size: 15px;
+      }
+      &_arguments {
+        margin-top: 10px;
+        > div {
+          > p {
+            font-size: 15px;
+          }
+        }
+      }
+      &_btn {
+        display: flex;
+        justify-content: center;
+        > a {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  
+}
