@@ -16,6 +16,7 @@ const Portfolio = () => {
 
   const main = useRef();
   useLayoutEffect(() => {
+    let width = window.innerWidth
     const ctx = gsap.context((self) => {
       const myElement = document.querySelector('.myElement');
       const imgs_1 = document.querySelector('.imgs_1');
@@ -36,7 +37,11 @@ const Portfolio = () => {
 
 
       gsap.to(imgs_1, {
-        y: 500,
+        y:
+          width < 700 ? 400 :
+            500
+
+        ,
         scrollTrigger: {
 
           trigger: imgs_1,
@@ -49,7 +54,11 @@ const Portfolio = () => {
         },
       });
       gsap.to(imgs_2, {
-        y: 30,
+        y: 
+        width<700?15:
+
+        30
+        ,
         scale: 1,
         scrollTrigger: {
           trigger: imgs_1,
@@ -62,7 +71,8 @@ const Portfolio = () => {
         },
       });
       gsap.to(imgs_3, {
-        y: 30,
+
+        y: width<700?15:30,
         scale: .9,
         scrollTrigger: {
           trigger: imgs_1,
@@ -110,7 +120,7 @@ const Portfolio = () => {
         },
       });
       gsap.to(imgs_3, {
-        y: 30,
+        y: width<700?15:30,
         scale: 1,
         scrollTrigger: {
           trigger: imgs_1,
@@ -145,7 +155,7 @@ const Portfolio = () => {
             <img src={img_2} alt="" className={'imgs_2 ' + c.portfolio_image + ' ' + c.c2} />
             <img src={img_3} alt="" className={'imgs_3 ' + c.portfolio_image + ' ' + c.c3} />
             <div className={c.scroll_block + ' scroll_block'}>
-              <div className="scroll_block_inner"></div>
+              <div className={c.scroll_block_inner + ' scroll_block_inner'}></div>
             </div>
           </div>
           <div className={c.portfolio_image_link}>
@@ -159,6 +169,13 @@ const Portfolio = () => {
             <a href="" className={c.portfolio_link}>BazaZum</a>
             <a href="" className={c.portfolio_link} >Vizion Group</a>
           </div>
+        </div>
+        <div className={c.portfolio_image_link + ' ' + c.media}>
+          <a href="" className={c.portfolio_link + ' ' + c.c1}>Kelvin</a>
+          <a href="" className={c.portfolio_link}>OshTV</a>
+          <a href="" className={c.portfolio_link}>Karagay</a>
+          <a href="" className={c.portfolio_link}>BazaZum</a>
+          <a href="" className={c.portfolio_link} >Vizion Group</a>
         </div>
       </div>
     </div>
