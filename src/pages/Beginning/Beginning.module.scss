@@ -23,9 +23,18 @@
 // .beginning{
 //     position: relative;
 // }
-// .relative{
-//     background-color: #020202;
-//     // margin-bottom: 850px;
-//     position: relative;
-//     z-index:1;
-// }
+.relative{
+    background-color: #020202;
+    margin-bottom: 1100px;
+    position: relative;
+    z-index:1;
+}
+@media(max-height:2500px){
+    .relative{
+        background-color: unset!important;
+        margin-bottom: unset!important;
+        position: unset!important;
+        z-index:unset!important;
+    }
+
+}
