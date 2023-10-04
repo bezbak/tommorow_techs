@@ -18,7 +18,7 @@ const Beginning = () => {
           <button>Бесплатная консультация</button>
         </div>
         <Innovations />
-        {/* <Progres /> */}
+        <Progres />
         <Portfolio />
         <AdaptiveBlock />
         <Advantages />
