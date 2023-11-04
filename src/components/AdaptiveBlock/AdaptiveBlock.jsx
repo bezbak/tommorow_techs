@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './adaptiveBlock.module.scss';
 import myImage from '../img/home.png';
+import computer from './img/комп.png';
+import table from './img/планшет.png';
+import phone from './img/телефон.png';
 // import phoneIcon from '../img/phone.svg';
 // import tabletIcon from '../img/tablet.svg';
 // import laptopIcon from '../img/laptop.svg';
@@ -8,20 +11,21 @@ import myImage from '../img/home.png';
 
 
 const AdaptiveBlock = () => {
+    const [active__img, setActive__img] = useState(computer)
     const handlePhoneClick = () => {
-        alert('Вы нажали на иконку "Телефон"');
+        setActive__img(phone)
     };
-
+    
     const handleTabletClick = () => {
-        alert('Вы нажали на иконку "Планшет"');
+        setActive__img(table)
     };
-
+    
     const handleLaptopClick = () => {
-        alert('Вы нажали на иконку "Ноутбук"');
+        setActive__img(computer)
     };
-
+    
     const handleComputerClick = () => {
-        alert('Вы нажали на иконку "Компьютер"');
+        setActive__img(computer)
     };
     return (
         <div className={styles.adaptiveBlock + ' adaptiveBlock'}>
@@ -32,7 +36,7 @@ const AdaptiveBlock = () => {
                 </h3>
             </div>
             <div className={styles.imageContainer}>
-                <img src={myImage} alt="Описание изображения" className={styles.homeImg} />
+                <img src={active__img} alt="Описание изображения" className={styles.homeImg} />
                 <div className={styles.icons}>
                     <button className={styles.icon} onClick={handlePhoneClick}>
                         <svg width="21" height="28" viewBox="0 0 21 28" fill="#7153FF" xmlns="http://www.w3.org/2000/svg" >

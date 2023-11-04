@@ -13,10 +13,10 @@ const Beginning = () => {
     <div className={scss.beginning}>
       <div className={scss.relative}>
         <Banner />
-        <div className={scss.freeConsultation}>
+        <button className={scss.freeConsultation}>
           <img src={mapSrc} alt="" />
-          <button>Бесплатная консультация</button>
-        </div>
+          <div>Бесплатная консультация</div>
+        </button>
         <Innovations />
         <Progres />
         <Portfolio />

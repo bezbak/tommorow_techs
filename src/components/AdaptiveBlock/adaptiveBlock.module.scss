@@ -34,9 +34,13 @@
   .imageContainer {
     max-width: 549.02px;
     width: 55%;
-
+    display: flex;
+    flex-direction: column;
     .homeImg {
-      width: 100%;
+      width: auto;
+      margin: auto;
+      height: 319px;
+      border-radius: 10px;
     }
   }
 
@@ -49,6 +53,9 @@
     justify-content: center;
 
     .icon {
+      &:hover{
+        cursor: url(/src/components/SafariDashboard/cursor.svg), auto;
+      }
       display: flex;
       flex-direction: column;
       align-items: center;

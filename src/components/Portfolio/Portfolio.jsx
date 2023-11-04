@@ -20,6 +20,9 @@ const Portfolio = () => {
     const ctx = gsap.context((self) => {
       const myElement = document.querySelector('.myElement');
       const imgs_1 = document.querySelector('.imgs_1');
+      const text__1 = document.querySelector('.text__1');
+      const text__2 = document.querySelector('.text__2');
+      const text__3 = document.querySelector('.text__3');
       const imgs_2 = document.querySelector('.imgs_2');
       const imgs_3 = document.querySelector('.imgs_3');
       const scroll_block_inner = document.querySelector('.scroll_block_inner');
@@ -53,11 +56,21 @@ const Portfolio = () => {
           anticipatePin: 1,
         },
       });
+      gsap.to(text__1, {
+        y: -400,
+        scrollTrigger: {
+          trigger: imgs_1,
+          start: "+=1000px",
+          // endTrigger: myElement,
+          end: "+=1000",
+          scrub: 1,
+        },
+      });
       gsap.to(imgs_2, {
-        y: 
-        width<700?15:
+        y:
+          width < 700 ? 15 :
 
-        30
+            30
         ,
         scale: 1,
         scrollTrigger: {
@@ -70,9 +83,10 @@ const Portfolio = () => {
           anticipatePin: 1,
         },
       });
+
       gsap.to(imgs_3, {
 
-        y: width<700?15:30,
+        y: width < 700 ? 15 : 30,
         scale: .9,
         scrollTrigger: {
           trigger: imgs_1,
@@ -119,8 +133,19 @@ const Portfolio = () => {
 
         },
       });
+      gsap.to(text__2, {
+        y: -500,
+        scrollTrigger: {
+          trigger: imgs_1,
+          start: "+=2500px",
+          endTrigger: myElement,
+          end: "+=1000",
+          scrub: 1,
+
+        },
+      });
       gsap.to(imgs_3, {
-        y: width<700?15:30,
+        y: width < 700 ? 15 : 30,
         scale: 1,
         scrollTrigger: {
           trigger: imgs_1,
@@ -144,10 +169,22 @@ const Portfolio = () => {
   return (
     <div id='myElement' className={c.parent + ' myElement'}>
       <div className={c.porfolio}>
-        <div className={c.portfolio_text}>
-          <a href="" className={c.porfolio_link}>Проекты, над которыми работали наши разработчики</a>
-          <h1 className={c.porfolio_big}>Kelvin</h1>
-          <p className={c.porfolio_smol}>Ну кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далее</p>
+        <div className={c.portfolio_text + ' '}>
+          <div className='text__1 texts'>
+            <a href="" className={c.porfolio_link}>Проекты, над которыми работали наши разработчики</a>
+            <h1 className={c.porfolio_big}>Kelvin</h1>
+            <p className={c.porfolio_smol}>Ну кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далее</p>
+          </div>
+          <div className='text__2 texts'>
+            <a href="" className={c.porfolio_link}>Проекты, над которыми работали наши разработчики</a>
+            <h1 className={c.porfolio_big}>Ош ТВ</h1>
+            <p className={c.porfolio_smol}>Ну кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далее</p>
+          </div>
+          <div className='text__3 texts'>
+            <a href="" className={c.porfolio_link}>Проекты, над которыми работали наши разработчики</a>
+            <h1 className={c.porfolio_big}>Karagay</h1>
+            <p className={c.porfolio_smol}>Ну кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далее</p>
+          </div>
         </div>
         <div className={c.portfolio_image}>
           <div className={c.img_block + ' img_block1'}>

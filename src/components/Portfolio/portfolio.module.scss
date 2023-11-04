@@ -19,8 +19,11 @@
     }
 
     .portfolio_text {
+        // perspective: 200px;
         width: 285px;
-        // height: 200px;
+        overflow: hidden;
+        height: 225px;
+        position: relative;
         display: flex;
         flex-direction: column;
 
@@ -179,6 +182,9 @@
         }
 
         .portfolio_link {
+            &:hover{
+                cursor: url(/src/components/SafariDashboard/cursor.svg), auto;
+              }
             font-family: SF Pro Display;
             font-size: 15px;
             font-weight: 500;
