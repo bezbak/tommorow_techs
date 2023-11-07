@@ -11,7 +11,8 @@ header {
             gap: 50px;
             display: flex;
 
-            span {
+            a {
+                color: white;
                 font-size: 15px;
                 cursor: pointer;
                 transition: all linear 0.3s;

@@ -6,6 +6,7 @@ import waIcon from '../img/wa.svg';
 import tgIcon from '../img/tg.svg';
 import nameIcon from '../img/name.svg';
 import numberIcon from '../img/number.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -24,11 +25,11 @@ const Footer = () => {
           </h1>
         </div>
         <div className={styles.links}>
-          <a className={styles.aLink} href="#">Главная</a>
-          <a className={styles.aLink} href="#">О нас</a>
-          <a className={styles.aLink} href="#">Услуги</a>
-          <a className={styles.aLink} href="#">Отзывы</a>
-          <a className={styles.aLink} href="#">Контакты</a>
+          <Link to={'./'} className={styles.aLink} href="#">Главная</Link>
+          <Link to={'./aboutus'} className={styles.aLink} href="#">О нас</Link>
+          <Link to={'./services'} className={styles.aLink} href="#">Услуги</Link>
+          <Link to={'./'} className={styles.aLink} href="#">Отзывы</Link>
+          <Link to={'./'} className={styles.aLink} href="#">Контакты</Link>
         </div>
 
         <div className={styles.contact}>

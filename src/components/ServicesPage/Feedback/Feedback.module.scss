@@ -41,17 +41,33 @@
     gap: 90px;
     > div {
       > h3 {
-        font-size: 15px;
+        font-size: 30px;
+        text-align: start;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .Feedback {
+    gap: 90px;
+    > div {
+      > h3 {
+        font-size: 25px;
+        text-align: center;
       }
     }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .Feedback {
     flex-direction: column-reverse;
     > div {
       padding: 0 40px;
+      h3 {
+        font-size: 15px;
+        text-align: center;
+      }
     }
   }
 }
