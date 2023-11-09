@@ -1,0 +1,125 @@
+.AboutBanner {
+    max-width: 1200px;
+    width: calc(100% - 160px);
+    margin: 71px auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 2vw;
+
+    .MainBlock {
+        border-radius: 20px;
+        background-position: center;
+        background-size: cover;
+        // background-color: red;
+        position: relative;
+    }
+
+    .topLeft {
+        width: calc(73.333%);
+        background-image: url(./img/banner1.png);
+        // background: linear-gradient(249deg, rgba(20, 20, 20, 0.00) 13.36%, rgba(0, 0, 0, 0.658) 80.45%), url(<path-to-image>), rgba(211, 211, 211, 0) 50% / cover no-repeat;
+    }
+
+    .topRight {
+        width: calc(24.16%);
+        background-image: url(./img/banner2.png);
+        // background: linear-gradient(249deg, rgba(20, 20, 20, 0.00) 13.36%, rgba(0, 0, 0, 0.60) 80.45%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+        border-radius: 0;
+    }
+
+    .bottomLeft {
+        width: calc(38.3%);
+        display: flex;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #414141;
+        background: linear-gradient(256deg, rgba(20, 20, 20, 0.00) 14.24%, rgba(0, 0, 0, 0.60) 73.28%), #121212;
+        
+        .phone {
+            margin-top: 18%;
+            width: calc(51.7% + 10px);
+            height: calc(167% );
+            background-position: center;
+            background-size: cover;
+            background-image: url(./img/phone.png);
+        }
+    }
+
+    .bottomCenter {
+        width: calc(32.5%);
+        background-image: url(./img/banner4.png);
+    }
+
+    .bottomRight {
+        width: calc(24.16%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+
+        div {
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            width: calc(44.8%);
+            height: calc(44.8%);
+        }
+
+        .bottomRight__1 {
+            background-image: url(./img/icon1.svg);
+        }
+
+        .bottomRight__2 {
+            background-image: url(./img/icon2.svg);
+        }
+
+        .bottomRight__3 {
+            background-image: url(./img/icon3.svg);
+        }
+
+        .bottomRight__4 {
+            background-image: url(./img/icon4.svg);
+            border: solid 1px #404040;
+        }
+    }
+}
+
+
+@media (max-width:760px) {
+    .AboutBanner {
+        width: calc(100% - 100px);
+
+        row-gap: 15px;
+
+        .MainBlock {
+            border-radius: 10px;
+        }
+
+        .bottomRight {
+            div {
+                border-radius: 5px;
+
+            }
+        }
+    }
+
+}
+
+@media (max-width:400px) {
+    .AboutBanner {
+        row-gap: 7.5px;
+
+        .MainBlock {
+            border-radius: 5px;
+        }
+
+        .bottomRight {
+            div {
+                border-radius: 2.5px;
+            }
+        }
+    }
+
+}
