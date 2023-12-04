@@ -5,6 +5,12 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
+    > h2{
+        margin-bottom: 52px;
+        font-size: 41px;
+        font-style: normal;
+        font-weight: 500;
+    }
 
     main {
         width: 100%;

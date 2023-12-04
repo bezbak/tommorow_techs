@@ -3,9 +3,8 @@ import scss from './discount.module.scss'
 import notebookSrc from './notebook.svg'
 import abstractLensesSrc from './abstract lenses.svg'
 import bloorCircleSrc from './bloorCircle.svg'
-import figureSrc from './figure.svg'
+import figureSrc from './Graphic.png'
 import InfinitySlider from './infinitySlider/InfinitySlider'
-import mugSrc from './mug.svg'
 import TimeCount from './TimeCount/TimeCount'
 const Discount = () => {
   return (

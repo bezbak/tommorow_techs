@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React ,{useState,useEffect} from 'react'
 import scss from './safariDashboard.module.scss'
 import DashboardHeader from './DashboardHeader/DashboardHeader'
 import DashboardLeft from './DashboardLeft/DashboardLeft'

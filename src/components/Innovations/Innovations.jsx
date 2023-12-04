@@ -21,7 +21,7 @@ const Innovations = () => {
 
   const main = useRef();
   useLayoutEffect(() => {
-    const ctx = gsap.context((self) => {
+    const ctx = gsap.context(() => {
       const Svg_1 = document.querySelector('.Svg_1');
       const Svg_8 = document.querySelector('.Svg_8');
       const column_1 = document.querySelector('.column_1');

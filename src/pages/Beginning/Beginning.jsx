@@ -1,4 +1,3 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { Banner } from '../../components'
 import scss from './Beginning.module.scss'
 import mapSrc from './map.svg'

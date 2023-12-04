@@ -18,7 +18,12 @@
   font-family: 'SF Pro Display';
   scroll-behavior: smooth;
 }
-
+body, html{
+  text-rendering: optimizeLegibility;
+  scroll-behavior: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 a{
   text-decoration: none;
 }
