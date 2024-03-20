@@ -66,40 +66,9 @@
         color: #8A8886;
         font-weight: 500;
         margin-bottom: 18px;
-        animation: 2s forwards move-text linear;
         position: relative;
     }
-
-    @keyframes move-text {
-        0% {
-            top: 300px;
-            left: 600px;
-            opacity: 0;
-        }
-
-        25% {
-
-            left: 300px;
-        }
-
-        50% {
-            left: 100px;
-        }
-
-        75% {
-            left: 10px;
-
-        }
-
-        100% {
-            top: 0;
-            left: 0;
-            opacity: 1;
-        }
-    }
-
 }
-
 @media (max-width:1000px) {
     .dashboardLeft {
         .text_wrap {

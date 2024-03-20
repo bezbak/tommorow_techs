@@ -10,7 +10,7 @@ const Header = () => {
         <div className={scss.nav_block}><img src={logoSrc} alt="" /></div>
         <div className={scss.nav_block}>
           <Link to={'/'}>Главное</Link>
-          <Link to={'/aboutus'}>О нас</Link>
+          <Link to={'/about'}>О нас</Link>
           <Link to={'/services'}>Услуги</Link>
           <Link to={'/'}>Отзывы</Link>
           <Link to={'/'}>Контакты</Link>
