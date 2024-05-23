@@ -13,7 +13,7 @@ const Header = () => {
           <Link to={'/about'}>О нас</Link>
           <Link to={'/services'}>Услуги</Link>
           <Link to={'/'}>Отзывы</Link>
-          <Link to={'/'}>Контакты</Link>
+          <Link to={'/contacts'}>Контакты</Link>
         </div>
         <div className={scss.nav_block}>
           <button>Узнать больше</button>
