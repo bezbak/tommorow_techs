@@ -227,10 +227,11 @@ a{
         display: flex;
         flex-direction: column;
         .Image{
-            height: 500px;
-            width: 350px;
-            margin-right: 125px;
-            margin-bottom: 50px;
+            height: 100vw;
+            width: 75%;
+            max-width: 350px; 
+            margin-right: 20%;  
+            margin-bottom: 20px;
         }
         .text{
             display: flex;
@@ -238,24 +239,25 @@ a{
             
         }
         .hcontact{
-            font-size: 25px;
+            font-size: 5vw;
         }
         .text2{
-            margin-right: 70px;
+            margin-right: auto; 
+            margin-left: auto; 
+            margin-bottom: 10px;
         }
         .text1{
-            font-size: 20px;
+            font-size: 4vw;
         }
         .wrap{
-            font-size: 15px;
+            font-size: 3vw;
         }
         .icons{
-            width:  25px;
+            width:  5vw;
         }
         h1{
-            font-size: 33px;
+            font-size: 6vw;
         }
-        
-        
     }
 }
+
