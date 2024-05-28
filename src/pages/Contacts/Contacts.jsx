@@ -19,25 +19,25 @@ const Contacts = () => {
                     <div className={scss.text2}>
                         <div  className={scss.text1}>
                             <h1>Контакты</h1>
-                            <p>Мы открыты для сотрудничества с вами <br /> и готовы обсудить ваш будуший проект</p>
+                            <div className={scss.fonts}>Мы открыты для сотрудничества с вами <br /> и готовы обсудить ваш будуший проект</div>
                         </div>
                         <div className={scss.text}>
                             <div className={scss.wrap}>
-                                <p>Обсудить проект</p>
-                                <a href="">projectnew@tt.io</a><br />
-                                <a href="tel:+996700121212">+996(700)12-12-12</a>
+                                <div className={scss.fonts}>Обсудить проект</div>
+                                <a className={scss.space} href="">projectnew@tt.io</a><br /><br />
+                                <a className={scss.space} href="tel:+996700121212">+996(700)12-12-12</a>
                             </div>
                             <div className={scss.wrap}>
-                                <p>Адрес</p>
-                                <a href="https://www.google.com/maps/place/72+%D0%9F%D1%80.+%D0%9C%D0%B0%D1%81%D0%B0%D0%BB%D0%B8%D0%B5%D0%B2%D0%B0,+%D0%9E%D1%88/@40.529333,72.802328,17z/data=!3m1!4b1!4m6!3m5!1s0x38bdaea77996f4ad:0x84ded06c3db376e5!8m2!3d40.529329!4d72.8049029!16s%2Fg%2F11c4sm82wt?entry=ttu">Кыргызстан <br></br> город Ош,Масалиева 72</a>
+                                <div className={scss.fonts}>Адрес</div>
+                                <a className={scss.space} href="https://www.google.com/maps/place/72+%D0%9F%D1%80.+%D0%9C%D0%B0%D1%81%D0%B0%D0%BB%D0%B8%D0%B5%D0%B2%D0%B0,+%D0%9E%D1%88/@40.529333,72.802328,17z/data=!3m1!4b1!4m6!3m5!1s0x38bdaea77996f4ad:0x84ded06c3db376e5!8m2!3d40.529329!4d72.8049029!16s%2Fg%2F11c4sm82wt?entry=ttu">Кыргызстан <br></br> город Ош,Масалиева 72</a>
                             </div>
                             <div className={scss.wrap}>
-                                <p>Контакты</p>
-                                <a href="tel:+996700121212">+996(700)12-12-12</a><br />
-                                <a href="tel:+996700121212">+996(700)12-12-12</a>
+                                <div className={scss.fonts}>Контакты</div>
+                                <a className={scss.space} href="tel:+996700121212">+996(700)12-12-12</a><br /><br />
+                                <a className={scss.space} href="tel:+996700121212">+996(700)12-12-12</a>
                             </div>
                             <div className={scss.wrap}>
-                                <p>Социалные сети</p>
+                                <div className={scss.fonts}>Социалные сети</div>
                                 <a className={scss.links} href="https://t.me/amk2k">
                                     <img className={scss.icons} src={tgIcon} alt="tg" />
                                 </a>
@@ -53,8 +53,8 @@ const Contacts = () => {
         
                             </div>
                             <div className={scss.wrap}>
-                                <p>Карьера</p>
-                                <a href="jobsemail@tt.io">jobsemail@tt.io</a>
+                                <div className={scss.fonts}>Карьера</div>
+                                <a className={scss.space} href="jobsemail@tt.io">jobsemail@tt.io</a>
                             </div>
                         </div>
                     </div>

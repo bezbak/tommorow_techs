@@ -1,4 +1,5 @@
 
+
 .block{
     display: flex;
     margin-top: 50px;
@@ -8,7 +9,7 @@
         height: 800px;
         width:560px;
         background-size: cover;
-        margin: 0 50px 0 50px;
+        margin: 0 30px 0 30px;
         border-radius: 20px;
         background-position: center;
         
@@ -17,29 +18,32 @@
         display: flex;
         flex-wrap: wrap; 
         justify-content: space-between; 
-        margin-top: 50px;
+        margin-top: 50px; 
     }
     
     .text > div {
         width: calc(50% - 10px); 
-        margin-bottom: 20px; 
+        margin-bottom: 30px; 
     }
     .contact {
         display: flex;
         flex-direction: column;
         gap: 20px;
     
-        .hcontact {
-            font-size: 50px;
-            font-family: "SF Pro Display";
-            font-weight: 600;
-            opacity: 0.5;
-        }
+        
+    }
+    .text2{
+        width: 410px;
     }
     .icons{
         width: 25px;
     }
-    
+    .hcontact {
+        font-size: 32px;
+        font-family: "SF Pro Display";
+        font-weight: 600;
+        color: #999999;
+    }
     
     .Inputs_a{
         display: flex;
@@ -49,7 +53,7 @@
         
     }
     .buttonOtpr {
-        padding: 17px 89px;
+        padding: 17px 80px;
         border-radius: 6px;
         width: 100%;
         max-width: 240px;
@@ -58,6 +62,7 @@
         color: #fafafa;
         font-family: "SF Pro Display";
         font-weight: 600;
+        font-size: 17px;
     }
     
     .input,
@@ -93,6 +98,7 @@
         background-color: transparent;
     }
     
+    
     .inputWithIcon .input::placeholder {
         color: #ffffff;
     }
@@ -102,9 +108,13 @@
         outline: none;
     }
     .links{
-        margin-right: 10px;
+        margin-right: 20px;
         width: 50px;
     }
+    .wrap{
+        margin-right: 10px;
+    }
+    
     
     .socialIcons {
         width: 100%;
@@ -131,13 +141,32 @@
     }  
 }
 p{
-    opacity: 0.5;  
+    color: #999999; 
+    font-weight: 600;
+    font-size: 17px;
+    
+}
+.fonts{
+    color: #999999;  
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Gilroy';
+    margin-bottom: 8px;
+    
 }
 h1{
-    font-size: 50px;
+    font-size: 54px;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    margin: 0;
 }
 a{
     color: white;
+    font-size: 17px;
+    font-weight: 600;
+    
+    
+    
 }
 .black{
     width: max-content;
@@ -160,7 +189,7 @@ a{
 @media(max-width: 1200px) {
     .block{
         .Image{
-            height: 700px;
+            height: 800px;
             width:560px;    
         
         } 
@@ -170,7 +199,7 @@ a{
 @media(max-width: 992px) {
     .block{
         .Image{
-            height: 700px;
+            height: 800px;
             width:560px;  
             
         } 
@@ -190,9 +219,9 @@ a{
     .block{
         display: flex;
         .Image{
-            height: 350px;
-            width: 300px;
-            margin-bottom: 250px;
+            height: 400px;
+            width: 400px;
+            margin-bottom: 300px;
 
         } 
         .text{
@@ -228,9 +257,8 @@ a{
         flex-direction: column;
         .Image{
             height: 100vw;
-            width: 75%;
-            max-width: 350px; 
-            margin-right: 20%;  
+            width: 70%; 
+            margin-right: 25%;  
             margin-bottom: 20px;
         }
         .text{
@@ -238,14 +266,20 @@ a{
             flex-direction: column;
             
         }
+        .text > div {
+            width: calc(100% - 70px); 
+            margin-bottom: 30px; 
+        }
         .hcontact{
             font-size: 5vw;
         }
         .text2{
-            margin-right: auto; 
-            margin-left: auto; 
             margin-bottom: 10px;
+            margin-right: 20vw;
+            width: 70vw;
+
         }
+        
         .text1{
             font-size: 4vw;
         }
@@ -258,6 +292,17 @@ a{
         h1{
             font-size: 6vw;
         }
+        .fonts{
+            
+            width: calc(150% - 1px);
+        }
+        p{
+            color: #999999; 
+            font-weight: 600;
+            font-size: 4vw;
+            
+        }
+        
     }
 }
 
