@@ -1,0 +1,327 @@
+
+
+.block{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    .Image{
+        background: url(sky.png);   
+        height: 800px;
+        width:560px;
+        background-size: cover;
+        margin: 0 30px 0 30px;
+        border-radius: 20px;
+        background-position: center;
+        
+    }
+    .text {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        margin-top: 50px; 
+    }
+    
+    .text > div {
+        width: calc(50% - 10px); 
+        margin-bottom: 30px; 
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+        
+    }
+    .text2{
+        width: 410px;
+    }
+    .icons{
+        width: 25px;
+    }
+    .hcontact {
+        font-size: 32px;
+        font-family: "SF Pro Display";
+        font-weight: 600;
+        color: #999999;
+    }
+    
+    .Inputs_a{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;  
+        
+    }
+    .buttonOtpr {
+        padding: 17px 80px;
+        border-radius: 6px;
+        width: 100%;
+        max-width: 240px;
+        background: #7153ff;
+        border: none;
+        color: #fafafa;
+        font-family: "SF Pro Display";
+        font-weight: 600;
+        font-size: 17px;
+    }
+    
+    .input,
+    .buttonOtpr {
+        margin-bottom: 10px;
+        color: #fafafa;
+    }
+    
+    .inputWithIcon {
+        display: flex;
+        align-items: center;
+        max-width: 240px;
+        width: 100%; 
+    }
+    .inputWithIcon label {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 6px 20px;
+        border-radius: 6px;
+        border: solid 1px #d1d1d1;
+    }
+    .inputWithIcon .imgInput {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .inputWithIcon .input {
+        padding: 10px 18px 10px 6px;
+        border: none;
+        border-radius: 4px;
+        margin: 0;
+        background-color: transparent;
+    }
+    
+    
+    .inputWithIcon .input::placeholder {
+        color: #ffffff;
+    }
+    
+    .inputWithIcon .input:focus {
+        border-color: #d1d1d1;
+        outline: none;
+    }
+    .links{
+        margin-right: 20px;
+        width: 50px;
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .wrap{
+        margin-right: 10px;
+    }
+    
+    .main_text{
+        font-size: 54px;
+        font-family: 'Gilroy';
+        font-weight: 600;
+        margin: 0;
+    }
+    .socialIcons {
+        width: 100%;
+        margin-top: 16px;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        justify-content: center;
+        .iconContainer {
+            width: 100%;
+            max-width: 240px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+            padding: 7.5px 15px;
+            border: 1px solid #fff;
+            background-color: #fff;
+            border-radius: 6px;
+            img {
+                width: 25px;
+            }
+        }
+    }  
+}
+.fonts{
+    color: #999999;  
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Gilroy';
+    margin-bottom: 8px;
+    
+}
+
+
+.black{
+    width: 100%;
+    height: 50px;
+    background: rgb(0, 0, 0);
+}
+
+@media(max-width: 1400px) {
+    .block{
+        .Image{
+            height: 800px;
+            width:560px;
+        }        
+        .text1{
+            font-size: 25px;
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .block{
+        .Image{
+            height: 800px;
+            width:560px;    
+        
+        } 
+    }
+}
+
+@media(max-width: 992px) {
+    .block{
+        display: flex;
+        .Image{
+            height: 400px;
+            width: 300px;
+            margin-bottom: 300px;
+
+        } 
+        .text{
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            margin-top: 50px;
+            
+        }
+        .hcontact{
+            font-size: 17px;
+        }
+        .text1{
+            font-size: 12px;
+        }
+        .wrap{
+            font-size: 10px;
+        }
+        .icons{
+            width:  15px;
+        }
+        
+        .Inputs_a{
+            margin-right: 20px;
+        }
+    }
+}
+@media(max-width: 768px) {
+    .block{
+        display: flex;
+        flex-direction: column;
+        .Image{
+            height: 100vw;
+            width: 70%; 
+            margin-right: 25%;  
+            margin-bottom: 20px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .text > div {
+            width: calc(100% - 70px); 
+            margin-bottom: 30px; 
+        }
+        .hcontact{
+            font-size: 5vw;
+        }
+        .text2{
+            margin-bottom: 10px;
+            margin-right: 20vw;
+            width: 70vw;
+
+        }
+        
+        .text1{
+            font-size: 4vw;
+        }
+        .wrap{
+            font-size: 3vw;
+        }
+        .icons{
+            width:  5vw;
+        }
+        .text_main{
+            font-size: 6vw;
+        }
+        .fonts{
+            
+            width: calc(150% - 1px);
+        }
+        
+        
+    }
+}
+@media(max-width: 576px) {
+    .block{
+        display: flex;
+        flex-direction: column;
+        .Image{
+            height: 100vw;
+            width: 70%; 
+            margin-right: 25%;  
+            margin-bottom: 20px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+        .text > div {
+            width: calc(100% - 70px); 
+            margin-bottom: 30px; 
+        }
+        .hcontact{
+            font-size: 5vw;
+        }
+        .text2{
+            margin-bottom: 10px;
+            margin-right: 20vw;
+            width: 70vw;
+
+        }
+        
+        .text1{
+            font-size: 4vw;
+        }
+        .wrap{
+            font-size: 3vw;
+        }
+        .icons{
+            width:  5vw;
+        }
+        .main_text{
+            font-size: 6vw;
+        }
+        .fonts{
+            width: calc(150% - 1px);
+        }
+        .links{
+            display: inline;
+            text-wrap: nowrap;
+            
+        }
+        
+        
+        
+    }
+}
+
