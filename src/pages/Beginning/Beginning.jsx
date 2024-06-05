@@ -6,7 +6,8 @@ import Progres from '../../components/Progress/Progress'
 import Innovations from '../../components/Innovations/Innovations'
 import AdaptiveBlock from '../../components/AdaptiveBlock/AdaptiveBlock'
 import Footer from '../../components/Footer/Footer'
-import Portfolio from '../../components/Portfolio/Portfolio'
+import Portfolio2 from '../../components/Portfolio/Portfolio2'
+
 const Beginning = () => {
   return (
     <div className={scss.beginning}>
@@ -18,7 +19,7 @@ const Beginning = () => {
         </button>
         <Innovations />
         <Progres />
-        <Portfolio />
+        <Portfolio2 />
         <AdaptiveBlock />
         <Advantages />
       </div>

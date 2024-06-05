@@ -169,6 +169,7 @@ const Portfolio = () => {
   return (
     <div id='myElement' className={c.parent + ' myElement'}>
       <div className={c.porfolio}>
+
         <div className={c.portfolio_text + ' '}>
           <div className='text__1 texts'>
             <a href="" className={c.porfolio_link}>Проекты, над которыми работали наши разработчики</a>
@@ -186,6 +187,7 @@ const Portfolio = () => {
             <p className={c.porfolio_smol}>Ну кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далее</p>
           </div>
         </div>
+
         <div className={c.portfolio_image}>
           <div className={c.img_block + ' img_block1'}>
             <img src={img_1} alt="" className={'imgs_1 ' + c.portfolio_image + ' ' + c.c1} />
@@ -207,6 +209,7 @@ const Portfolio = () => {
             <a href="" className={c.portfolio_link} >Vizion Group</a>
           </div>
         </div>
+
         <div className={c.portfolio_image_link + ' ' + c.media}>
           <a href="" className={c.portfolio_link + ' ' + c.c1}>Kelvin</a>
           <a href="" className={c.portfolio_link}>OshTV</a>
