@@ -1,12 +1,13 @@
 header {
     .nav {
+        max-width: 1140px;
         display: flex;
-
+        margin: 0 auto;
         justify-content: space-between;
         align-items: center;
         color: var(--white);
 
-        .nav_block:nth-child(2) {
+        &_list {
             justify-content: center;
             gap: 50px;
             display: flex;
@@ -21,32 +22,83 @@ header {
             }
         }
 
-        button {
-            width: 166px;
-            height: 42px;
-            background: var(--green);
-            color: var(--white);
-            border-radius: 8px;
-            border: none;
+        &_btn{
+            &_button {
+                width: 166px;
+                height: 42px;
+                background: var(--green);
+                color: var(--white);
+                border-radius: 8px;
+                border: none;
+            }
         }
 
     }
 }
-.burger{
-    display: none;
+
+
+
+@media (max-width:1200px){
+    header{
+        .nav {
+            max-width: 960px;
+        }
+    }
+
 }
-@media (max-width:760px) {
-    header .nav .nav_block:nth-child(2) {
-        display: none;
+
+
+@media (max-width:992px){
+    header{
+        .nav {
+            max-width: 720px;
+            position: relative;
+
+            &_list{
+                position: absolute;
+                right: 0;
+                top: 60px;
+                height: 0;
+                overflow: hidden;
+                transition: .5s;
+                z-index: 10;
+                &_show{
+                    height: 20px;
+                }
+            }
+            &_btn{
+                &_button {
+                   display: none;
+                }
+            }
+        }
     }
-    header .nav .nav_block:last-child button {
-        display: none;
-    }
-    .burger{
+    .burger_btn{
         display: block;
     }
-    header {
+
+}
+
+
+@media (max-width:768px) {
+    header{
         .nav {
-            width: 90%;
-        }}
-}           
+            max-width: 540px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    header{
+        .nav {
+            max-width: 100%;
+            width: 95%;
+            &_list{
+                gap: 15px;
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

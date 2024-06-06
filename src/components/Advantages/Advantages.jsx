@@ -23,7 +23,7 @@ const Advantages = () => {
       </div>
       <div className={scss.advantages_container_wrap}>
 
-      
+
       <div className={scss.advantages_container}>
         <div className={scss.advantages_block}>
           <div className={scss.advantages_block_text}>
@@ -63,8 +63,8 @@ const Advantages = () => {
       </div>
       <div className={scss.sliders_wrap}>
 
-     
-      <div className={scss.sliders} style={{width:scrollPosition/42+"%"}}>
+
+      <div className={scss.sliders} >
 
 
         <div className={scss.slider} style={{transform:`translateX(-${scrollPosition/2}px)`,}}> <div className={scss.slide}> <h1>ПРИСОЕДИНЯЙТЕСЬ К НАМ</h1>

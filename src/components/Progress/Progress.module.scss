@@ -1011,8 +1011,8 @@ $black_bg_color: #020202;
     }
 
     .temporarily {
-        max-width: 360px !important;
-        min-width: 360px !important;
+        max-width: 310px !important;
+        min-width: 310px !important;
         border-radius: 17.88px 0px 0px 0px !important;
         right: -5px !important;
         bottom: -100px !important;
@@ -1020,7 +1020,7 @@ $black_bg_color: #020202;
         .temporarily__inner {
             padding: 37px !important;
             padding-right: 0 !important;
-            width: 419px !important;
+            width: 310px !important;
 
             .top {
                 align-items: center;
@@ -1073,7 +1073,7 @@ $black_bg_color: #020202;
 
 @media (max-width: 700px) {
     .parent {
-        width: 340px;
+        width: 310px;
     }
 
     .parent .main__Progres {
