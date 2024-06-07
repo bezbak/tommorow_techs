@@ -28,6 +28,7 @@ const Services = () => {
       title: 'ОшТв (сайт)',
       desc: 'Редизайн популярного канала в городе Ош'
     },
+    
   ]
   const cardsContent = [
     {
@@ -207,29 +208,31 @@ const Services = () => {
     <div className={` ${scss.Services}`}>
       <div className={scss.relative}>
         <Header />
-        <section className={`size-1200 ${scss.Services__slider}`}>
-          <Slider children={sliderContent} />
-        </section>
-        <section className={`size-1200 ${scss.Innovation}`}>
+        <div className={scss.Services_slider}>
+          <section>
+            <Slider children={sliderContent} />
+          </section>
+        </div>
+        <section className={scss.Innovation}>
           <h2>
             Инновационные IT-решения
             для развития вашего бизнеса
           </h2>
           <a href="#services">Выбрать услугу</a>
         </section>
-        <section className={`size-1200 ${scss.Feedback}`}>
+        <section className={scss.Feedback}>
           <Feedback />
         </section>
         <div className={scss.Line}>
           <img src="./src/components/ServicesPage/img/Line.png" alt="" />
         </div>
-        <section id='services' className={` ${scss.DevelopmentServices}`}>
-          <h1>Услуги разработок</h1>
-          <div>
+        <section id='services' className={scss.DevelopmentServices}>
+          <h1 className={scss.Servicesdev}>Услуги разработок</h1>
+          <div className={scss.cards}>
             <Cards children={cardsContent} />
           </div>
         </section>
-        <div className={scss.Line}>
+        <div className={scss.Line2}>
           <img src="./src/components/ServicesPage/img/Line.png" alt="" />
         </div>
         <section className={scss.InTouch}>

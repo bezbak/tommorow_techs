@@ -92,7 +92,7 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
   .Card {
     //width: 50%;
     flex-direction: column-reverse;
@@ -141,6 +141,32 @@
   }
 }
 
-@media (max-width: 700px) {
-  
+@media (max-width:992px) {
+  .Card{
+    width: 440px;
+    height: 800px;
+  }
+  .centerImg{
+    width: 500px !important;
+    height: 290px ;
+    overflow: hidden;
+    
+  }
+}
+@media (max-width:768px) {
+  .Card{
+    width: 340px;
+    height: 700px;
+  }
+  .centerImg{
+    width: 500px !important;
+    height: 290px ;
+    overflow: hidden;
+    
+  }
+}
+@media (max-width:576px) {
+  .Card{
+    width: 80vw;
+  }
 }
