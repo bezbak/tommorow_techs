@@ -38,7 +38,7 @@ const Slider = ({ children }) => {
         {children.map((el, idx) => (
           <SwiperSlide key={idx}>
             <div className={scss.Slider__slide}>
-              <img src={el.img} alt="" />
+              <img className={scss.SliderImg} src={el.img} alt="" />
               <div>
                 <p>{el.title}</p>
                 <p>{el.desc}</p>

@@ -207,7 +207,7 @@ const Services = () => {
     <>
     <div className={` ${scss.Services}`}>
       <div className={scss.relative}>
-        <Header />
+        <Header/>
         <div className={scss.Services_slider}>
           <section>
             <Slider children={sliderContent} />

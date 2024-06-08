@@ -2,11 +2,17 @@
 .Services {
   padding-top: 44px;
 }
+html, body {
+  height: 100%;
+}
 
+body {
+  overflow-y: auto;
+}
 .Services_slider {
   width: 1203px;
-  margin-left: 120px;
-  margin-top: 60px;
+  
+  margin: 60px;
 }
 
 .Innovation {
@@ -139,16 +145,32 @@
     }
   }
 }
-
+@media(max-width:1400px){
+  .Services_slider{
+    width: 1200px !important;
+  }
+}
 @media (max-width: 1200px) {
   
   .Feedback {
-    width: 1000px;
-    margin-left: 100px;
+    width: 88vw ;
+    margin-left: 50px;
   }
   .Services_slider{
-    padding-right: 100px;
+    width: 91.67vw !important;
+    margin: 50px;
   }
+  .DevelopmentServices{
+    padding: 50px;
+    .cards{
+      width: 1000px;
+    }
+  }
+  .cards{
+    width: 91.67vw !important;
+  }
+  
+
   
 }
 
@@ -193,13 +215,16 @@
 
 @media (max-width: 768px) {
   .Services_slider {
-    width: 700px;
-    padding: 64px 30px 44px 0px;
+    width: 680px !important;
+    margin: 15px;
   }
   
   .Innovation > h2 {
     max-width: 406px;
     font-size: 26px;
+  }
+  .Innovation{
+    margin: auto;
   }
   
   .InTouch {
@@ -217,16 +242,21 @@
     }
     
   }
+  .DevelopmentServices{
+    padding: 15px;
+  }
   .Feedback {
     width: 600px;
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .Servicesdev{
     font-size: 32px;
    
     text-wrap: nowrap;
   }
-  
+  .Line{
+    margin-left: auto;
+  }
   
 }
 
@@ -235,8 +265,10 @@
     max-width: 217px;
   }
   .Services_slider {
-    width: 90vw;
-    
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    width: 91vw !important;
   }
   .Feedback {
     width: 13vw;
