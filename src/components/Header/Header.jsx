@@ -22,7 +22,7 @@ const Header = () => {
         }>
           <Link onClick={()=>{
             setShowBurger(false)
-          }} to={'/'}>Главное</Link>
+          }} to={'/'}>Главная</Link>
           <Link onClick={()=>{
             setShowBurger(false)
           }} to={'/about'}>О нас</Link>
