@@ -59,14 +59,14 @@
   }
 }
 @media (max-width: 576px) {
-  .Slider {
-    height: 500px; /* Установите высоту слайдера равной половине высоты экрана */
+  .Slider{
+    height: 500px;
   }
   
   .SliderImg {
-    width: 100%; /* Ширина изображения равна 100% ширины слайдера */
-    height: 110vh; /* Высота изображения равна 100% высоты слайдера */
+    width: 100%; 
+    height: 500px; 
     object-fit: cover;
-    object-position: 25%;
+    object-position: 0%;
   }
 }

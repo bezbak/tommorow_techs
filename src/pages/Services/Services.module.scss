@@ -11,8 +11,7 @@ body {
 }
 .Services_slider {
   width: 1203px;
-  
-  margin: 60px;
+  margin: 60px 60px 60px 90px;
 }
 
 .Innovation {
@@ -57,6 +56,7 @@ body {
 
 .Feedback {
   margin: 0px 100px 0px 100px;
+  
 }
 
 .Line {
@@ -149,6 +149,18 @@ body {
   .Services_slider{
     width: 1200px !important;
   }
+  .cards{
+    width: 1200px;
+    
+  }
+  .DevelopmentServices{
+    padding: 0px 90px 0px 90px;
+  }
+  .Feedback{
+    width: 1065px;
+    margin-left: 185px;
+  }
+  
 }
 @media (max-width: 1200px) {
   
@@ -160,18 +172,11 @@ body {
     width: 91.67vw !important;
     margin: 50px;
   }
-  .DevelopmentServices{
-    padding: 50px;
-    .cards{
-      width: 1000px;
-    }
-  }
+  
   .cards{
-    width: 91.67vw !important;
+    width: 1000px
+    
   }
-  
-
-  
 }
 
 @media (max-width: 992px) {
@@ -215,8 +220,8 @@ body {
 
 @media (max-width: 768px) {
   .Services_slider {
-    width: 680px !important;
-    margin: 15px;
+    width: 700px !important;
+    margin: 30px;
   }
   
   .Innovation > h2 {
@@ -267,7 +272,7 @@ body {
   .Services_slider {
     height: 500px;
     margin: auto;
-    overflow: hidden;
+    
     width: 91vw !important;
   }
   .Feedback {

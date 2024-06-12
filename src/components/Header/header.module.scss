@@ -34,6 +34,9 @@ header {
         }
 
     }
+    .burger_btn{
+        display: none;
+    }
 }
 
 
@@ -72,10 +75,11 @@ header {
                 }
             }
         }
+        .burger_btn{
+            display: block;
+        }
     }
-    .burger_btn{
-        display: block;
-    }
+
 
 }
 
