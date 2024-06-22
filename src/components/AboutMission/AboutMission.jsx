@@ -21,7 +21,7 @@ export default function AboutMission() {
                 <div style={HeightStyle} className={lol.block + ' MissionHeight ' + lol.c1}>
                     <img src={icon1} alt="" />
                     <h3>Сделать бизнес удобным</h3>
-                    <p>Весб рутинный процесс в вашей деятельности оцифрововается и дает большие возможности для улучшения</p>
+                    <p>Вес рутинный процесс в вашей деятельности оцифрововается и дает большие возможности для улучшения</p>
                 </div>
                 <div style={HeightStyle} className={lol.block + ' ' + lol.c1}>
                     <img src={icon2} alt="" />

@@ -17,9 +17,10 @@ const Advantages = () => {
   return (
     <div className={`size-1400 ${scss.advantages} advantages`}>
       <div className={scss.advantages_text}>
-        <h3>Ну кароче тут текст про преимущества</h3>
-        <h1>In Chronicle everything is made
-          with Blocks that come with </h1>
+        <h3>Спектор наших услуг</h3>
+        <h1>
+          Рост вашего бизнеса с нами — это гарантировано 
+        </h1>
       </div>
       <div className={scss.advantages_container_wrap}>
 

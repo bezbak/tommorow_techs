@@ -8,7 +8,7 @@ const Portfolio2 = () => {
         <div className={classes.portfolio}>
             <div className={classes.portfolio_item}>
                 <div className={classes.portfolio_item_text} >
-                <a href="" className={classes.portfolio_item_text_link}>Проекты, над которыми работали наши разработчики</a>
+                <a href="" className={classes.portfolio_item_text_link}>Портфолио</a>
             <h1 className={classes.portfolio_item_text_title}>Kelvin</h1>
             <p className={classes.portfolio_item_text_text}>Ну кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далее</p>
 
@@ -20,7 +20,7 @@ const Portfolio2 = () => {
 
             <div className={classes.portfolio_item}>
                 <div className={classes.portfolio_item_text} >
-                <a href="" className={classes.portfolio_item_text_link}>Проекты, над которыми работали наши разработчики</a>
+                <a href="" className={classes.portfolio_item_text_link}>Портфолио</a>
             <h1 className={classes.portfolio_item_text_title}>Ош ТВ</h1>
             <p className={classes.portfolio_item_text_text}>Ну кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далее</p>
 
@@ -32,7 +32,7 @@ const Portfolio2 = () => {
 
             <div className={classes.portfolio_item}>
                 <div className={classes.portfolio_item_text} >
-                <a href="" className={classes.portfolio_item_text_link}>Проекты, над которыми работали наши разработчики</a>
+                <a href="" className={classes.portfolio_item_text_link}>Портфолио</a>
             <h1 className={classes.portfolio_item_text_title}>Karagay</h1>
             <p className={classes.portfolio_item_text_text}>Ну кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далееНу кароче там текст вроде как 123 и так далее</p>
 

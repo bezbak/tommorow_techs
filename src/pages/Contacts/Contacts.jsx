@@ -24,8 +24,8 @@ const Contacts = () => {
                         <div className={scss.text}>
                             <div className={scss.wrap}>
                                 <div className={scss.fonts}>Обсудить проект</div>
-                                <a className={scss.links} href="">projectnew@tt.io</a><br />
-                                <a className={scss.links} href="tel:+996700121212">+996(700)12-12-12</a>
+                                <a className={scss.links} href="mailto:tomorrowtechs.it@gmail.com">tomorrowtechs.it@gmail.com</a><br />
+                                <a className={scss.links} href="tel:+996990090086">+996(990) 090-086</a>
                             </div>
                             <div className={scss.wrap}>
                                 <div className={scss.fonts}>Адрес</div>

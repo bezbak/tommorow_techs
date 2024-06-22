@@ -30,9 +30,9 @@ const AdaptiveBlock = () => {
     return (
         <div className={styles.adaptiveBlock + ' adaptiveBlock'}>
             <div className={styles.text}>
-                <h1 className={styles.title}>Под любого клиента и устройства</h1>
+                <h1 className={styles.title}>Адаптация  на все устройства</h1>
                 <h3 className={styles.descr}>
-                    Ну кароче там текст вроде как 123 и так далее. Ну кароче там текст вроде как 123 и так далее. Ну кароче там текст вроде как 123 и так далее
+                  Мы разрабатываем сайты, которые идеально отображаются на любых устройствах. Независимо от того, используете ли вы компьютер, планшет или смартфон, ваш сайт будет выглядеть красиво и функционально
                 </h3>
             </div>
             <div className={styles.imageContainer}>
