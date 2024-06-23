@@ -1,0 +1,21 @@
+{
+    "images": [
+      {
+        "src": "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
+        "description": "Описание к первому изображению"
+      },
+      {
+        "src": "https://www.shutterstock.com/shutterstock/photos/1215643816/display_1500/stock-vector-vector-abstract-science-futuristic-energy-technology-concept-digital-image-of-light-rays-1215643816.jpg",
+        "description": "Описание ко второму изображению"
+      },
+      {
+        "src": "https://media.macphun.com/img/uploads/customer/how-to/570/15550740495cb08c019f4a94.42766927.jpg?q=85&w=1340",
+        "description": "Описание к третьему изображению"
+      },
+      {
+        "src": "https://imgv3.fotor.com/images/slider-image/A-clear-close-up-photo-of-a-woman.jpg",
+        "description": "Описание к фото"
+      }
+    ]
+  }
+  
