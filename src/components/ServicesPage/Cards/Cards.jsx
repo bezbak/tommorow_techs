@@ -25,8 +25,8 @@ const Cards = ({ children }) => {
                 <img src={el.img} alt={el.name} />
               ))}
             </div>
-            <div>
-              <img src={el.img} alt="" />
+            <div  >
+              <img className={scss.centerImg}  src={el.img} alt="m" />
             </div>
           </div>
         </div>
