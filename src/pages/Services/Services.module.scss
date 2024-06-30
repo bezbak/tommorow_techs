@@ -1,8 +1,8 @@
-
 .Services {
   padding-top: 44px;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -10,11 +10,12 @@ body {
   overflow-y: auto;
 }
 .Services_slider {
-  width: 1203px;
-  margin: 60px 60px 60px 90px;
+  margin: 80px auto 150px;
+  max-width: 1203px;
 }
 
 .Innovation {
+  margin-bottom: 90px;
   width: 100% !important;
   display: flex;
   flex-direction: column;
@@ -55,8 +56,8 @@ body {
 }
 
 .Feedback {
-  margin: 0px 100px 0px 100px;
-  
+  margin: auto;
+  width: 1065px;
 }
 
 .Line {
@@ -71,7 +72,8 @@ body {
   padding: 54px 0 28px;
 }
 .DevelopmentServices {
-  padding: 0px 120px;
+  margin-bottom: 100px;
+  padding: 0px 120px 0 120px;
   display: flex;
   flex-direction: column;
   > div {
@@ -105,7 +107,7 @@ body {
     font-size: 41px;
     font-style: normal;
     font-weight: 500;
-    line-height: 55px; 
+    line-height: 55px;
   }
   > div {
     display: flex;
@@ -145,93 +147,74 @@ body {
     }
   }
 }
-@media(max-width:1400px){
-  .Services_slider{
+@media (max-width: 1400px) {
+  .Services_slider {
     width: 1200px !important;
   }
-  .cards{
-    width: 1200px;
-    
+  .cards {
+    max-width: 1200px;
   }
-  .DevelopmentServices{
+  .DevelopmentServices {
     padding: 0px 90px 0px 90px;
   }
-  .Feedback{
+  .Feedback {
     width: 1065px;
-    margin-left: 185px;
+    margin: auto;
   }
-  
 }
 @media (max-width: 1200px) {
-  
   .Feedback {
-    width: 88vw ;
+    width: 88vw;
     margin-left: 50px;
   }
-  .Services_slider{
+  .Services_slider {
     width: 91.67vw !important;
-    margin: 50px;
   }
-  
-  .cards{
-    width: 1000px
-    
+
+  .cards {
+    max-width: 1000px;
   }
 }
 
 @media (max-width: 992px) {
-  .DevelopmentServices > div {
-    display: flex;
-    flex-direction: column;
-  }
-  .DevelopmentServices{
-    padding-left: 50px;
+
+  .DevelopmentServices {
+    padding: 0 50px 0 50px;
   }
   .Feedback {
     width: 700px;
-    margin-left: 200px;
+    margin: auto;
   }
   .DevelopmentServices > h1 {
     font-size: 32px;
-    margin-left: 100px;
     text-wrap: nowrap;
   }
   .Services_slider {
-    width: 1000px; 
-    margin: 50px
+    width: 1000px;
   }
-  
-  .Innovation {
-    margin-left: 20px;
-  }
+
   .cards {
-    width: 700px;
+    max-width: 100%;
+    margin: auto;
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px !important;
-    
   }
-  .Line{
-    margin-left: 20px;
-  }
-  
-
 }
 
 @media (max-width: 768px) {
   .Services_slider {
-    width: 700px !important;
-    margin: 30px;
+    width: 700px;
   }
-  
+
   .Innovation > h2 {
     max-width: 406px;
     font-size: 26px;
   }
-  .Innovation{
+  .Innovation {
     margin: auto;
   }
-  
+
   .InTouch {
     padding: 0px 52px;
     margin-bottom: 132px;
@@ -245,34 +228,28 @@ body {
       justify-content: center;
       gap: 12px;
     }
-    
   }
-  .DevelopmentServices{
+  .DevelopmentServices {
     padding: 15px;
   }
   .Feedback {
     width: 600px;
-    margin-left: 30px;
+    margin: auto;
   }
-  .Servicesdev{
+  .Servicesdev {
     font-size: 32px;
-   
+
     text-wrap: nowrap;
   }
-  .Line{
+  .Line {
     margin-left: auto;
   }
-  
 }
-
 @media (max-width: 576px) {
   .Innovation > h2 {
     max-width: 217px;
   }
   .Services_slider {
-    height: 500px;
-    margin: auto;
-    
     width: 91vw !important;
   }
   .Feedback {
@@ -281,16 +258,15 @@ body {
     justify-content: start;
   }
   .cards {
-    width: 80vw;
+    max-width: 80vw;
     display: grid !important;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 15px !important;
-    
   }
   .DevelopmentServices > h1 {
     font-size: 25px;
     margin: 2.5vw;
-    margin-left: 10vw;
+    // margin-left: 10vw;
     text-wrap: nowrap;
   }
 }
