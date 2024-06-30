@@ -1,241 +1,241 @@
 @font-face {
-    font-family: "SF Pro Display";
-    src: url(../../assets/fonts/SF-Pro-Display-Medium.otf);
-    font-weight: 500;
+  font-family: 'SF Pro Display';
+  src: url(../../assets/fonts/SF-Pro-Display-Medium.otf);
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: "SF Pro Display";
-    src: url(../../assets/fonts/SF-Pro-Display-Semibold.otf);
-    font-weight: 600;
+  font-family: 'SF Pro Display';
+  src: url(../../assets/fonts/SF-Pro-Display-Semibold.otf);
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: "SF Pro Display";
-    src: url(../../assets/fonts//SF-Pro-Display-Bold.otf);
-    font-weight: 700;
+  font-family: 'SF Pro Display';
+  src: url(../../assets/fonts//SF-Pro-Display-Bold.otf);
+  font-weight: 700;
 }
 
 .footer {
-    z-index: 0;
-    bottom: 0;left: 0;
-    position: fixed;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 300px;
+  background: #edebe9;
+  width: 100%;
+  .text {
+    color: #8a8886;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  .logoContainer {
+    padding-bottom: 125px;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+  }
+
+  .links {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    padding-top: 300px;
-    background: #edebe9;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 26px;
+  }
+
+  .aLink {
+    color: #8a8886;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    transition: 0.4s;
+
+    &:hover {
+      color: #020202;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 20px;
+
+    .hcontact {
+      font-size: 26px;
+      font-family: 'SF Pro Display';
+      font-weight: 600;
+      color: #020202;
+    }
+  }
+
+  .hOs {
+    max-width: 391px;
+    color: #151515;
+    font-family: SF Pro Display;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .buttonOtpr {
+    padding: 17px 89px;
+    border-radius: 6px;
     width: 100%;
-    .text {
-        color: #8a8886;
-        font-size: 14px;
+    max-width: 240px;
+    background: #7153ff;
+    border: none;
+    color: #fafafa;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+  }
+
+  .input,
+  .buttonOtpr {
+    margin-bottom: 10px;
+  }
+
+  .inputWithIcon {
+    display: flex;
+    align-items: center;
+    max-width: 240px;
+    width: 100%;
+    // margin-bottom: 20px;
+  }
+
+  .inputWithIcon label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 6px 20px;
+    border-radius: 6px;
+    border: solid 1px #0047ff;
+  }
+
+  .inputWithIcon .imgInput {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .inputWithIcon .input {
+    padding: 10px 18px 10px 6px;
+    border: none;
+    border-radius: 4px;
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .inputWithIcon .input::placeholder {
+    color: #000000;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .inputWithIcon .input:focus {
+    border-color: #d1d1d1;
+    outline: none;
+  }
+
+  .socialIcons {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+
+    .iconContainer {
+      width: 100%;
+      max-width: 240px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // margin: 5px;
+      gap: 15px;
+      padding: 7.5px 15px;
+      border: 1px solid #fff;
+      background-color: #fff;
+      border-radius: 6px;
+
+      // icon-text
+      img {
+        width: 25px;
+      }
+
+      .iconText {
+        color: #020202;
+        font-family: SF Pro Display;
+        font-size: 12.75px;
         font-weight: 500;
-        line-height: 25px;
+      }
     }
-    
-    
-    .logoContainer {
-        padding-bottom: 125px;
-        text-align: center;
+
+    .linkSoc {
+      width: 100%;
+      max-width: 240px;
+      color: #8a8886;
+      text-decoration: none;
+      margin-bottom: 15px;
     }
-    
-    .logo {
-        max-width: 100px;
-    }
-    
+  }
+
+  .footerText {
+    width: 100%;
+    text-align: right;
+    color: #8a8886;
+    font-family: SF Pro Display;
+    font-size: 17px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    padding: 64px;
+    padding-top: 300px;
     .content {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 1200px;
-        margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px 165px;
     }
-    
-    
-    
-    .links {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        font-size: 26px;
+  }
+}
+@media (max-width: 682px) {
+  .footer {
+    .footer_top {
+      width: calc(100% + 128px - 60px);
     }
-    
-    .aLink {
-        color: #8a8886;
-        text-decoration: none;
-        margin-bottom: 15px;
-        font-size: 26px;
-        font-family: "SF Pro Display";
-        font-weight: 600;
-        transition: .4s;
-    
-        &:hover {
-            color: #020202;
-        }
-    }
-    
-    .contact {
-        display: flex;
-        flex-direction: column;
-        // align-items: center;
-        gap: 20px;
-    
-        .hcontact {
-            font-size: 26px;
-            font-family: "SF Pro Display";
-            font-weight: 600;
-            color: #020202;
-        }
-    }
-    
-    .hOs {
-        width: 273px;
-        color: #8a8886;
-        font-family: SF Pro Display;
-        font-size: 17px;
-        font-weight: 500;
-    }
-    
-    .buttonOtpr {
-        padding: 17px 89px;
-        border-radius: 6px;
-        width: 100%;
-        max-width: 240px;
-        background: #7153ff;
-        border: none;
-        color: #fafafa;
-        font-family: "SF Pro Display";
-        font-weight: 600;
-    }
-    
-    .input,
-    .buttonOtpr {
-        margin-bottom: 10px;
-    }
-    
-    .inputWithIcon {
-        display: flex;
+    text-align: center;
+    .content {
+      .contact,
+      .socialIcons {
         align-items: center;
-        max-width: 240px;
-        width: 100%;
-        // margin-bottom: 20px;
+      }
     }
-    
-    .inputWithIcon label {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        padding: 6px 20px;
-        border-radius: 6px;
-        border: solid 1px #d1d1d1;
-    }
-    
-    .inputWithIcon .imgInput {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-    }
-    
-    .inputWithIcon .input {
-        padding: 10px 18px 10px 6px;
-        border: none;
-        border-radius: 4px;
-        margin: 0;
-        background-color: transparent;
-    }
-    
-    .inputWithIcon .input::placeholder {
-        color: #d1d1d1;
-    }
-    
-    .inputWithIcon .input:focus {
-        border-color: #d1d1d1;
-        outline: none;
-    }
-    
-    .socialIcons {
-        width: 100%;
-        margin-top: 16px;
-        display: flex;
-        gap: 15px;
-        flex-direction: column;
-        justify-content: center;
-    
-        .iconContainer {
-            width: 100%;
-            max-width: 240px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            // margin: 5px;
-            gap: 15px;
-            padding: 7.5px 15px;
-            border: 1px solid #fff;
-            background-color: #fff;
-            border-radius: 6px;
-    
-            // icon-text
-            img {
-                width: 25px;
-            }
-    
-            .iconText {
-                color: #020202;
-                font-family: SF Pro Display;
-                font-size: 12.75px;
-                font-weight: 500;
-            }
-        }
-    
-        .linkSoc {
-            width: 100%;
-            max-width: 240px;
-            color: #8a8886;
-            text-decoration: none;
-            margin-bottom: 15px;
-        }
-    }
-    
-    .footerText {
-        width: 100%;
-        text-align: right;
-        color: #8a8886;
-        font-family: SF Pro Display;
-        font-size: 17px;
-        font-weight: 500;
-    }
+  }
 }
-
-@media (max-width:1000px){
-    .footer{
-        
-        padding: 64px;
-        padding-top: 300px;
-        .content{
-            flex-wrap: wrap;
-            justify-content: center;
-            gap:50px 165px;
-
-        }
-    }
-}
-@media (max-width:682px){
-    .footer{
-        .footer_top{
-            width: calc(100% + 128px - 60px);
-        }
-        text-align: center;
-        .content{
-            .contact,.socialIcons{
-                align-items: center;
-            }
-        }
-    }
-}
-@media(max-height: 2500px){
-    .footer {
-        position: static;
-    }
+@media (max-height: 2500px) {
+  .footer {
+    position: static;
+  }
 }

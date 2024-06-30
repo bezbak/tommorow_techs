@@ -1,11 +1,12 @@
 @import url(../../../assets/fonts/Gilroy/stylesheet.css);
+
 .Slider {
   &__slide {
     border-radius: 32px;
     overflow: hidden;
     max-width: 1200px;
     width: 100%;
-    height: max-content;
+    height: auto;
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -34,39 +35,41 @@
     }
     > img {
       width: 100%;
-      //position: absolute;
-      z-index: -1;
+      height: auto;
+      object-fit: cover;
     }
   }
 }
 
-
 @media (max-width: 768px) {
-  .Slider{
-    &__slide{
-      //border-radius: 15px;
-      >div{
-        
+  .Slider {
+    &__slide {
+      > div {
         gap: 4px;
-        >p:nth-child(1){
+        margin: 0 0 50px 30px;
+        > p:nth-child(1) {
           font-size: 26px;
         }
-        >p:nth-child(2){
+        > p:nth-child(2) {
           font-size: 15px;
         }
       }
     }
   }
 }
+
 @media (max-width: 576px) {
-  .Slider{
-    height: 500px;
+  .Slider {
+    height: auto;
   }
-  
-  .SliderImg {
-    width: 100%; 
-    height: 500px; 
-    object-fit: cover;
-    object-position: 0%;
+
+  .Slider__slide {
+    > img {
+      height: 300px;
+      object-position: center;
+    }
+    > div {
+      margin: 0 0 50px 30px;
+    }
   }
 }
