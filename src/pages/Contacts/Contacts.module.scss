@@ -251,7 +251,7 @@
       font-size: 6vw;
     }
     .fonts {
-      width: calc(150% - 1px);
+      width: 323px;
     }
   }
 }
@@ -298,5 +298,10 @@
       display: inline;
       text-wrap: nowrap;
     }
+  }
+}
+@media screen and (max-width: 360px) {
+  .fonts {
+    max-width: 300px;
   }
 }
