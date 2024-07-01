@@ -15,7 +15,7 @@
     font-family: SF Pro Display;
     font-size: 41px;
     font-weight: 500;
-    line-height: 134.146%;
+    line-height: 48.93px;
     margin-bottom: 52px;
     @media (max-width: 760px) {
       font-size: 32px;
@@ -23,8 +23,9 @@
   }
 
   .description {
+    line-height: 48.93px;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 41px;
     margin: auto;
     @media (max-width: 760px) {
       font-size: 17px;

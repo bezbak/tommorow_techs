@@ -116,7 +116,12 @@
           // top: 120px;
           font-size: 8px;
         }
+        @media screen and (max-width: 340px) {
+          top: 120px;
+          font-size: 8px;
+        }
       }
+
     }
     .images {
       display: flex;
