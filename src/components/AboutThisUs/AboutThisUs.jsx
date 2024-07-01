@@ -14,7 +14,7 @@ export default function AboutThisUs() {
         <div style={HeightStyle} className={lol.block + ' ' + lol.second}></div>
         <div style={HeightStyle} className={lol.block + ' ' + lol.third}></div>
       </main>
-      <p>Наша команда состоит из высокоэффективных специалистов и веселых людей</p>
+      <p>Наша команда состоит из высокоэффективных специалистов и профиссионалов своего дела</p>
       <div className={lol.line}></div>
     </div>
   )

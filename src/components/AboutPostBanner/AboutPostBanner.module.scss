@@ -12,9 +12,14 @@
     font-weight: 300;
     line-height: normal;
     width: calc(100% - 20px);
-    max-width: 665px;
-    span{
+    max-width: 675px;
+
+    span {
       color: #7153FF;
+    }
+
+    .break {
+      display: block; /* Показывать <br /> по умолчанию */
     }
   }
 
@@ -53,6 +58,10 @@
       font-weight: 400;
       line-height: normal;
       padding-bottom: 144px;
+
+      .break {
+        display: none; 
+      }
     }
 
     .h3_2 {
