@@ -22,11 +22,10 @@ const Footer = () => {
           </h1>
         </div>
         <div className={styles.links}>
-          <Link to={'./'} className={styles.aLink} href="#">Главная</Link>
-          <Link to={'./aboutus'} className={styles.aLink} href="#">О нас</Link>
-          <Link to={'./services'} className={styles.aLink} href="#">Услуги</Link>
-          <Link to={'./'} className={styles.aLink} href="#">Отзывы</Link>
-          <Link to={'./'} className={styles.aLink} href="#">Контакты</Link>
+          <Link to='/' className={styles.aLink} href="#">Главная</Link>
+          <Link to='/about' className={styles.aLink} href="#">О нас</Link>
+          <Link to='/services' className={styles.aLink} href="#">Услуги</Link>
+          <Link to='/contacts' className={styles.aLink} href="#">Контакты</Link>
         </div>
 
         <div className={styles.contact}>
