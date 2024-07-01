@@ -5,6 +5,7 @@ import Slider from '../../components/ServicesPage/Slider/Slider'
 import { Link } from 'react-router-dom'
 import Feedback from '../../components/ServicesPage/Feedback/Feedback'
 import Cards from '../../components/ServicesPage/Cards/Cards'
+import AboutContact from "../../components/AboutContact/AboutContact"
 
 const Services = () => {
   const sliderContent = [
@@ -225,21 +226,7 @@ const Services = () => {
               <Cards children={cardsContent} />
             </div>
           </section>
-          <section className={scss.InTouch}>
-            <h2>Мы всегда остаемся на связи для обсуждения ваших проектов</h2>
-            <div>
-              <Link>
-                {' '}
-                <img src='./src/components/ServicesPage/img/compass.svg' alt='' />
-                Связаться с нами
-              </Link>
-              <Link>
-                {' '}
-                <img src='./src/components/ServicesPage/img/home.svg' alt='' />
-                Вернуться домой
-              </Link>
-            </div>
-          </section>
+          <AboutContact />
         </div>
       </div>
       <Footer />
