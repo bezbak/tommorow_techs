@@ -415,7 +415,9 @@ $black_bg_color: #020202;
         align-items: center;
         text-align: center;
         gap: 8px;
-        width: 487px;
+        width: 549px !important;
+        height: 219px;
+        
 
         span {
             color: $blue_color;
@@ -428,7 +430,9 @@ $black_bg_color: #020202;
             color: #FFF;
             font-size: 41px;
             font-weight: 600;
-            line-height: 45px;
+            width: 549px !important;
+
+            
         }
 
         p {
@@ -659,7 +663,7 @@ $black_bg_color: #020202;
             }
 
             .info__text {
-                width: 370px;
+                width: 394px;
                 color: #fff;
                 text-align: start;
                 margin-top: 17px;
@@ -688,7 +692,7 @@ $black_bg_color: #020202;
             }
 
             .info__text__2 {
-                width: 450px;
+                width: 538px;
                 color: #fff;
                 text-align: start;
                 padding: 20px 0;
@@ -772,11 +776,17 @@ $black_bg_color: #020202;
         align-items: center;
 
         .main__progres__text {
-            min-width: 50%;
-            max-width: 50%;
-            padding: 0 44px;
+            
+            width: 233px !important;
+            
+            padding: 0 22px;
             border-radius: 10px;
-
+            h2{
+                width: 233px !important;
+            }
+            p{
+                width: 197px !important;
+            }
         }
 
         .main__pages__cards {
