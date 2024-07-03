@@ -17,46 +17,52 @@
 //      background: none;
 //      border: none;
 //      outline: none;
-//      color: white;  
+//      color: white;
 //     }
 // }
 // .beginning{
 //     position: relative;
 // }
 .relative {
-    background-color: #020202;
-    margin-bottom: 1100px;
-    position: relative;
-    z-index: 1;
+  background-color: #020202;
+  margin-bottom: 1100px;
+  position: relative;
+  z-index: 1;
+
+  .line {
+    margin: 100px auto 100px;
+    max-width: 80%;
+    height: 1px;
+    background-color: #343434;
+  }
 }
 
 .freeConsultation {
-    z-index: 100;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    padding: 11px 22.5px;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    border: 1px solid #7153FF;
-    background: #7153FF;
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  padding: 11px 22.5px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #7153ff;
+  background: #7153ff;
 
-    div {
-        color: #FFF;
-        font-family: SF Pro Display;
-        font-size: 15px;
-        font-weight: 400;
-    }
+  div {
+    color: #fff;
+    font-family: SF Pro Display;
+    font-size: 15px;
+    font-weight: 400;
+  }
 }
 
-@media(max-height:2500px) {
-    .relative {
-        background-color: unset !important;
-        margin-bottom: unset !important;
-        position: unset !important;
-        z-index: unset !important;
-    }
-
+@media (max-height: 2500px) {
+  .relative {
+    background-color: unset !important;
+    margin-bottom: unset !important;
+    position: unset !important;
+    z-index: unset !important;
+  }
 }

@@ -1,0 +1,53 @@
+.AboutContact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 150px;
+  h2 {
+    max-width: 625px;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 48.93px;
+    margin-bottom: 52px;
+    @media screen and (max-width: 760px) {
+      font-size: 32px;
+    }
+  }
+  .btns {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    @media screen and (max-width: 630px) {
+      display: block;
+    }
+    .contactBtn {
+      border: none;
+      color: white;
+      background-color: #7153ff;
+      gap: 16px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 240px;
+      height: 50px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .homeBtn {
+      gap: 16px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 240px;
+      height: 50px;
+      border: 1px solid #7153ff;
+      border-radius: 6px;
+      color: white;
+      background-color: transparent;
+    }
+  }
+}

@@ -27,15 +27,15 @@ const Progress = () => {
         <div className={c.temporarily}>
           <div className={c.temporarily__inner}>
             <div className={c.top}>
-              <div className={c.butt}>Март 2023</div>
+              <div className={c.butt}>Март 2024</div>
               <div className={c.butt_2}>Действие пользователей</div>
             </div>
             <div className={c.center}>
-              <h1>1,15k</h1>
+              <h1>15,19k</h1>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
                 <path d="M8 0L15.7942 13.5H0.205771L8 0Z" fill="#44E760" />
               </svg>
-              +9%(total)
+              +39%(total)
             </div>
             <div className={c.bottom}>
               <div className={c.lines}>

@@ -14,13 +14,17 @@ const Beginning = () => {
       <div className={scss.relative}>
         <Banner />
         <button className={scss.freeConsultation}>
-          <img src={mapSrc} alt="" />
+          <img src={mapSrc} alt='' />
           <div>Бесплатная консультация</div>
         </button>
         <Innovations />
+        <div className={scss.line} />
         <Progres />
+        <div className={scss.line} />
         <Portfolio2 />
+        <div className={scss.line} />
         <AdaptiveBlock />
+        <div className={scss.line} />
         <Advantages />
       </div>
       <Footer />

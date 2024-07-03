@@ -1,108 +1,112 @@
 header {
-    .nav {
-        max-width: 1140px;
-        display: flex;
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
+  .activeLink {
+    border-radius: 8px;
+    border: 1px solid #EDEBE9;
+    padding: 2px 22px;
+  }
+
+  .nav {
+    max-width: 1140px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+
+    &_list {
+      justify-content: center;
+      gap: 50px;
+      display: flex;
+      align-items: center;
+      height: 30px;
+      a {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 26px;
+        cursor: pointer;
+        transition: all linear 0.3s;
+      }
+    }
+
+    &_btn {
+      &_button {
+        width: 166px;
+        height: 42px;
+        background: var(--green);
         color: var(--white);
-
-        &_list {
-            justify-content: center;
-            gap: 50px;
-            display: flex;
-
-            a {
-                color: white;
-                font-size: 15px;
-                cursor: pointer;
-                transition: all linear 0.3s;
-                border-radius: 0;
-
-            }
-        }
-
-        &_btn{
-            &_button {
-                width: 166px;
-                height: 42px;
-                background: var(--green);
-                color: var(--white);
-                border-radius: 8px;
-                border: none;
-            }
-        }
-
+        border-radius: 8px;
+        border: none;
+      }
     }
-    .burger_btn{
-        display: none;
-    }
+  }
+  .burger_btn {
+    display: none;
+  }
 }
 
-
-
-@media (max-width:1200px){
-    header{
-        .nav {
-            max-width: 960px;
-        }
+@media (max-width: 1200px) {
+  header {
+    .nav {
+      max-width: 960px;
     }
-
+  }
 }
 
+@media (max-width: 992px) {
+  header {
+    .nav {
+      max-width: 720px;
+      position: relative;
 
-@media (max-width:992px){
-    header{
-        .nav {
-            max-width: 720px;
-            position: relative;
-
-            &_list{
-                position: absolute;
-                right: 0;
-                top: 60px;
-                height: 0;
-                overflow: hidden;
-                transition: .5s;
-                z-index: 10;
-                &_show{
-                    height: 20px;
-                }
-            }
-            &_btn{
-                &_button {
-                   display: none;
-                }
-            }
+      &_list {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        z-index: 10;
+        &_show {
+          height: 30px;
         }
-        .burger_btn{
-            display: block;
+      }
+      &_btn {
+        &_button {
+          display: none;
         }
+      }
     }
-
-
+    .burger_btn {
+      display: block;
+    }
+  }
 }
 
-
-@media (max-width:768px) {
-    header{
-        .nav {
-            max-width: 540px;
-        }
+@media (max-width: 768px) {
+  header {
+    .nav {
+      max-width: 698px;
+      margin: 0 3%;
     }
+  }
 }
 
-@media (max-width:576px) {
-    header{
-        .nav {
-            max-width: 100%;
-            width: 95%;
-            &_list{
-                gap: 15px;
-                a{
-                    font-size: 12px;
-                }
-            }
+@media (max-width: 576px) {
+  header {
+    .nav {
+      max-width: 100%;
+      width: 95%;
+      &_list {
+        gap: 15px;
+
+        &_show {
+          height: 24px;
         }
+        a {
+          font-size: 12px;
+        }
+      }
     }
+  }
 }
