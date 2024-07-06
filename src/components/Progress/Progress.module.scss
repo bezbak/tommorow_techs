@@ -435,12 +435,12 @@ $black_bg_color: #020202;
 
   .main__pages__cards {
     display: flex;
-    padding: 20px 0;
+    padding: 16px 0;
     align-items: center;
     justify-content: center;
 
     .main__card {
-      margin: 0px 12px;
+      margin: 0px 8px;
       width: 590px;
 
       background-color: #121212;
@@ -759,7 +759,7 @@ $black_bg_color: #020202;
 
 @media (max-width: 1250px) {
   .parent {
-    width: 700px;
+    width: 1010px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -775,6 +775,8 @@ $black_bg_color: #020202;
     .main__pages__cards {
       .main__card {
         border-radius: 10px;
+        
+        margin: 0px 8px !important;
 
         span {
           font-size: 7.5px !important;
@@ -799,21 +801,30 @@ $black_bg_color: #020202;
         width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
+        h2{
+          font-size: 25px !important;
+          line-height: 30px !important;
+        }
+        p{
+          font-size: 14px !important;
+        }
+        span{
+          font-size: 14px !important;
+        }
       }
 
       .card__parent {
         padding: 14.5px 70px 30.5px 24px !important;
-        height: 310px !important;
+        height: 450px !important;
       }
 
       .main__card.c2 {
         .card__parent {
           padding: 8.12px 39px 30px 30px !important;
-          min-height: 310px !important;
-          max-height: 310px !important;
-          height: 310px !important;
+          
 
           h2 {
+            
             width: 252px !important;
           }
         }
@@ -822,15 +833,16 @@ $black_bg_color: #020202;
 
     .card__parent {
       .temporarily__divs {
-        width: 350px;
+        width: 450px;
+        height: 200px;
         gap: 13px;
-        padding-left: 5px;
+        padding-left: 90px;
 
         .block__main,
         .block {
-          min-width: 48.435px;
-          max-width: 48.435px;
-          height: 48.472px;
+          min-width: 60.435px;
+          max-width: 60.435px;
+          height: 60.472px;
           border-radius: 11.5px;
 
           .otstup {
@@ -846,16 +858,17 @@ $black_bg_color: #020202;
 
     .main__progres__text {
       gap: 0 !important;
+      
 
       span {
-        font-size: 7.5px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
       }
 
       h2 {
-        font-size: 20px;
+        font-size: 30px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -863,10 +876,11 @@ $black_bg_color: #020202;
       }
 
       p {
-        font-size: 10px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        width: 400px;
       }
     }
   }
@@ -874,7 +888,7 @@ $black_bg_color: #020202;
   .main__Progres {
     width: 100%;
     max-width: calc(100% - 50px) !important;
-    height: 240px !important;
+    height: 300px !important;
   }
 
   .main__pages__cards {
@@ -888,6 +902,7 @@ $black_bg_color: #020202;
 
       .card__parent {
         .temporarily__div {
+          
           .block {
             border-radius: 7.5px;
           }
@@ -895,8 +910,9 @@ $black_bg_color: #020202;
           .Svg_5 {
             padding: 8.5px 9px 7px;
 
-            max-width: 142.5px !important;
-            min-width: 142.5px !important;
+            max-width: 180.5px !important;
+            min-width: 180.5px !important;
+            height: 160px;
 
             .Svg_5top {
               margin-bottom: 25.5px;
@@ -935,8 +951,9 @@ $black_bg_color: #020202;
             margin-top: -99px;
             margin-left: 89px;
 
-            max-width: 112.5px !important;
-            min-width: 112.5px !important;
+            max-width: 170.5px !important;
+            min-width: 170.5px !important;
+            height: 150px;
 
             span {
               font-size: 5.625px !important;
@@ -989,16 +1006,16 @@ $black_bg_color: #020202;
   }
 
   .temporarily {
-    max-width: 310px !important;
-    min-width: 310px !important;
+    max-width: 440px !important;
+    min-width: 440px !important;
     border-radius: 17.88px 0px 0px 0px !important;
     right: -5px !important;
     bottom: -100px !important;
 
     .temporarily__inner {
-      padding: 37px !important;
+      padding: 90px !important;
       padding-right: 0 !important;
-      width: 310px !important;
+      width: 440px !important;
 
       .top {
         align-items: center;
@@ -1050,7 +1067,8 @@ $black_bg_color: #020202;
 
 @media (max-width: 700px) {
   .parent {
-    width: 310px;
+    width: 340px;
+    
   }
 
   .parent .main__Progres {
@@ -1059,6 +1077,7 @@ $black_bg_color: #020202;
     width: 100%;
     min-width: 100%;
     max-width: 100%;
+    height: 525px !important;
   }
 
   .parent .main__Progres .temporarily {
@@ -1071,12 +1090,15 @@ $black_bg_color: #020202;
     bottom: 0 !important;
     border-radius: 15px !important;
     margin-top: 16px !important;
+    .temporarily__inner{
+      padding: 20px 0px 0px 20px!important;
+    }
   }
 
   .parent .main__progres__text {
     margin-top: 32px;
     max-width: 287px;
-    width: 287px;
+    width: 287px ;
     padding: 0 !important;
     margin-bottom: 22px;
 
@@ -1087,6 +1109,9 @@ $black_bg_color: #020202;
     h2 {
       margin-top: 6px;
       font-size: 26px;
+    }
+    p{
+      width: 279px;
     }
   }
 
@@ -1099,6 +1124,8 @@ $black_bg_color: #020202;
 
     .main__card {
       width: 100% !important;
+      height: 550px !important;
+      
     }
   }
 
@@ -1141,6 +1168,7 @@ $black_bg_color: #020202;
   .main__pages__cards .main__card .card__parent .temporarily__div .Svg_5 {
     max-width: 285px !important;
     min-width: 285px !important;
+    height: 250px;
     padding: 16px 20px !important;
     border-radius: 15px !important;
 
@@ -1230,7 +1258,7 @@ $black_bg_color: #020202;
   }
 
   .main__pages__cards .main__card.c2 {
-    margin-top: 40px !important;
+    margin-top: 16px !important;
   }
 
   .parent .card__parent .temporarily__divs .block__main,
@@ -1246,7 +1274,9 @@ $black_bg_color: #020202;
   }
 
   .parent .card__parent .temporarily__divs {
-    width: 372.537px !important;
+    padding: 0px 0px 0px 0px;
+    width: 380px;
+    
   }
 
   .parent .main__pages__cards .main__card.c2 .card__parent {
@@ -1282,4 +1312,5 @@ $black_bg_color: #020202;
   .parent .main__pages__cards .main__card.c2 .card__parent h2 {
     width: 100% !important;
   }
+  
 }

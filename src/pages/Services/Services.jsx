@@ -56,7 +56,7 @@ const Services = () => {
     },
     {
       title: 'Брендинг',
-      desc: 'Брендинг это ключевым элементом стратегии маркетинга и помогает бизнесам выделяться на рынке.',
+      desc: 'Брендинг это ключевым элементом  стратегии маркетинга и помогает бизнесам выделяться на рынке.',
       arguments: [
         { id: 1, img: './src/components/ServicesPage/img/cards/book.svg', title: 'Ценности и миссия' },
         { id: 2, img: './src/components/ServicesPage/img/cards/verify.svg', title: 'Имидж и репутация' },
