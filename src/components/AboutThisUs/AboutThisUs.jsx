@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import lol from './AboutThisUs.module.scss'
+import AnimatedLine from '../AnimatedLine/AnimatedLine'
 export default function AboutThisUs() {
   const [HeightStyle, setHeightStyle] = useState({})
   setTimeout(() => {
@@ -14,8 +15,11 @@ export default function AboutThisUs() {
         <div style={HeightStyle} className={lol.block + ' ' + lol.second}></div>
         <div style={HeightStyle} className={lol.block + ' ' + lol.third}></div>
       </main>
-      <p>Наша команда состоит из высокоэффективных специалистов и профиссионалов своего дела</p>
-      <div className={lol.line}></div>
+      <center>
+        <p>Наша команда состоит из высокоэффективных специалистов и профиссионалов своего дела</p>
+        <AnimatedLine />
+
+      </center>
     </div>
   )
-}
+} 

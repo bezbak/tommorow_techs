@@ -12,9 +12,6 @@ import Svg_8 from './components/Svg_8/Svg_8'
 import Svg_7 from './components/Svg_7/Svg_7'
 import Svg_6 from './components/Svg_6/Svg_6'
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
-
 const Innovations = () => {
   const [lol_X, setLol_X] = useState(0)
   const [lol_Y, setLol_Y] = useState(0)

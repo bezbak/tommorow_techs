@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import lol from './AboutGalery.module.scss';
 import galleryData from './galleryData.json';
+import AnimatedLine from '../AnimatedLine/AnimatedLine';
 
 const AboutGalery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +46,9 @@ const AboutGalery = () => {
             />
           ))}
         </div>
-        <div className={lol.line}></div>
+        <center>
+          <AnimatedLine />
+        </center>
       </div>
     </div>
   );

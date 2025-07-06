@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Header from '../../components/Header/Header'
 import lol from './AboutUs.module.scss'
 import AboutBanner from '../../components/AboutBanner/AboutBanner'

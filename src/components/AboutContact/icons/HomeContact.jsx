@@ -6,11 +6,11 @@ const HomeContact = () => {
       <path
         d='M1 11.5L14.5 1L28 11.5V28C28 28.7956 27.6839 29.5587 27.1213 30.1213C26.5587 30.6839 25.7956 31 25 31H4C3.20435 31 2.44129 30.6839 1.87868 30.1213C1.31607 29.5587 1 28.7956 1 28V11.5Z'
         stroke='white'
-        stroke-width='2'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
-      <path d='M10 31V16H19V31' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+      <path d='M10 31V16H19V31' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
     </svg>
   )
 }

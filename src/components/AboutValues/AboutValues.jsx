@@ -4,6 +4,7 @@ import Quality from './icons/Quality'
 import Confidence from './icons/Confidence'
 import Sustainability from "./icons/Sustainability"
 import Value from "./icons/Value"
+import AnimatedLine from '../AnimatedLine/AnimatedLine'
 
 const AboutValues = () => {
   return (
@@ -33,7 +34,9 @@ const AboutValues = () => {
           <h3>Ценность</h3>
         </div>
       </div>
-      <div className={lol.line}></div>
+      <center>
+        <AnimatedLine />
+      </center>
     </div>
   )
 }

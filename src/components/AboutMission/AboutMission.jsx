@@ -5,6 +5,7 @@ import icon2 from './img/icon2.svg'
 import icon3 from './img/icon3.svg'
 import icon4 from './img/icon4.svg'
 import icon5 from './img/icon5.svg'
+import AnimatedLine from '../AnimatedLine/AnimatedLine'
 
 const AboutMission = () => {
   const containerRef = useRef(null)
@@ -85,7 +86,10 @@ const AboutMission = () => {
           </main>
         </div>
       </div>
-      <div className={lol.line}></div>
+      <center>
+        <AnimatedLine />
+      </center>
+
     </>
   )
 }

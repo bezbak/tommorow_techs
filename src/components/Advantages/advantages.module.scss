@@ -1,22 +1,41 @@
 .advantages {
-  background: #020202;
+  background: #edebe9;
   color: #edebe9;
+  position: relative;
+}
+
+.wrapper {
+  background: #020202;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
 }
 
 .sliders_wrap {
-  background: rgba(255, 0, 0, 0);
   transform: translateY(100%);
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
+  z-index: 2;
+
 }
 
 .advantages_container {
+  position: relative;
+  z-index: 2;
+
   width: 100%;
   height: 635px;
   display: flex;
   justify-content: center;
   gap: 43px;
+  background: #020202;
+
 
   .advantages_block {
     width: 385px;
@@ -47,6 +66,8 @@
 
 .advantages_text {
   text-align: center;
+  position: relative;
+  z-index: 2;
 
   h3 {
     font-size: 18px;

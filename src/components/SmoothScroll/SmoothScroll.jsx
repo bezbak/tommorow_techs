@@ -1,10 +1,6 @@
 // components/SmoothScroll.jsx
 import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-// Регистрируем плагин
-gsap.registerPlugin(ScrollTrigger);
 
 export default function SmoothScroll({ children }) {
   const scrollContainer = useRef(null);
