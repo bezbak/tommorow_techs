@@ -136,7 +136,6 @@ const Innovations = () => {
     <>
       <div onMouseMove={e => {
         setLol_X(e.movementX)
-        console.log(e);
         setLol_Y(e.screenY)
       }} className={c.Innovations}>
         <div className={c.main_widht + ' okno_lol'}>

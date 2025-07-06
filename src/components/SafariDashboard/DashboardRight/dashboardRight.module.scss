@@ -1,109 +1,182 @@
-.dashboardRight{
-width: 400px;
-margin-top: 71px;
+.orbitContainer {
+  position: relative;
+  width: 500px;
+  height: 580px;
+  margin-left: auto;
+  overflow: hidden;
+}
 
-  
-  
-  .system {
-    position: relative;
-    width: 100%;
-    max-width: 700px;
-    padding-top: 100%;  
-  
-  
-    &__sun {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  
-    &__orbit {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      border: 1px solid rgba(255, 255, 255, .3);
-      border-radius: 100%;
-      transform: translate(-50%, -50%);
-      animation: spin infinite linear both;
-  
-      @for $i from 1 through 10 {
-        &:nth-child(#{$i}) {
-          width: calc(#{$i}0%);
-          height: calc(#{$i}0%);
-        }
-      }
-  
-      &--sun {
-        border: none;
-      }
-  
-      &--mercury {
-        animation-duration: 3.7s;
-      }
-  
-      &--venus {
-        animation-duration: 4s;
-      }
-  
-      &--earth {
-        animation-duration: 2.2s;
-      }
-  
-      &--mars {
-        animation-duration: 4.7s;
-      }
-  
-      &--jupiter {
-        animation-duration: 3.9s;
-      }
-  
-      &--saturn {
-        animation-duration: 3.6s;
-      }
-  
-      &--uranus {
-        animation-duration: 2.5s;
-      }
-  
-      &--neptune {
-        animation-duration: 5.1s;
-      }
-  
-      &--pluto {
-        animation-duration: 3.4s;
-      }
-    }
-  
-    &__planet {
-      position: absolute;
-      top: 50%;
-      left: -12px;
-      width: 25px;
-      height: 25px;
-      border-radius: 100%;
-      transform: translateY(-50%);
-    }
-  
-    &__icon {
-      width: 100%;
-      height: 100%;
-    }
+.centerLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+}
+
+// Вращающиеся орбиты
+.orbit1,
+.orbit2,
+.orbit3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #7153FF;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 25s linear infinite;
+}
+
+.orbit1 {
+  width: 190px;
+  height: 190px;
+  animation-duration: 10s;
+}
+
+.orbit2 {
+  width: 320px;
+  height: 320px;
+  animation-duration: 16s;
+}
+
+.orbit3 {
+  width: 480px;
+  height: 480px;
+  animation-duration: 22s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
-  
-  @keyframes spin {
-    from {
-      transform: translate(-50%, -50%);
-    }
-  
-    to {
-      transform: translate(-50%, -50%) rotate(-360deg);
-    }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-@media (max-width:450px) {
-  .dashboardRight{
-    width: 100%;
-    height: 100%;
-  }
+
+.satellite {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 16px;
+  height: 16px;
+  background-color: #7153FF;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.reverse {
+  top: auto;
+  bottom: 0;
+}
+
+.orbitCont {
+  position: relative;
+  height: 100%;
+}
+
+.orbitCont2 {
+  top: -100%;
+}
+
+.orbitCont3 {
+  top: -200%;
+}
+
+// Иконки — стоят на месте
+.icon {
+  position: absolute;
+  height: 24px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.iconTop {
+  top: 32%;
+  left: 60%;
+  width: 48px;
+  height: 48px;
+}
+
+.iconTopLeft {
+  top: 32%;
+  left: 33%;
+  width: 38px;
+  height: 38px;
+}
+
+.iconTopBottom {
+  top: 63%;
+  left: 47%;
+  width: 34px;
+  height: 34px;
+
+}
+
+.iconTopLeft2 {
+  width: 42px;
+  height: 38px;
+  top: 25%;
+  left: 25%;
+}
+
+.iconTopRight2 {
+  width: 78px;
+  height: 48px;
+  top: 25%;
+  left: 65%;
+}
+
+.iconBotLeft2 {
+  width: 46px;
+  height: 46px;
+  top: 64%;
+  left: 22%;
+
+}
+
+.iconBotRight2 {
+  width: 75px;
+  height: 60px;
+  top: 64%;
+  left: 66%;
+}
+
+.iconTopRight3 {
+  width: 60px;
+  height: 60px;
+  top: 5%;
+  left: 52%;
+
+}
+
+.iconTopLeft3 {
+  width: 30px;
+  height: 44px;
+  top: 14%;
+  left: 18%;
+}
+
+.iconBotLeft3 {
+  width: 50px;
+  height: 50px;
+  top: 66%;
+  left: 87%;
+}
+
+.iconBotRight3 {
+  width: 70px;
+  height: 70px;
+  top: 67%;
+  left: 5%;
+}
+
+.iconBot3 {
+  width: 59px;
+  height: 52px;
+  top: 87%;
+  left: 44%;
 }

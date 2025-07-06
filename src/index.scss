@@ -20,9 +20,10 @@
 }
 body, html{
   text-rendering: optimizeLegibility;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // overscroll-behavior: none;
 }
 a{
   text-decoration: none;

@@ -9,8 +9,7 @@ import tgIcon from '../../components/img/tg.svg'
 import faceIcon from '../../components/img/Facebook-icon.png'
 const Contacts = () => {
     return (
-        <div>
-            <br />
+        <div className={scss.contacts_top}>
             <Header />
             <div className={scss.block}>
                 <div className={scss.Image}>
