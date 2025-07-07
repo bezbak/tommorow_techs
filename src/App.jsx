@@ -9,11 +9,11 @@ import Preloader from "./components/Preloader/Preloader";
 // gsap.registerPlugin(ScrollSmoother);
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  useLayoutEffect(() => {
-    ScrollSmoother.create({
-      smooth: 2 // how long (in seconds) it takes to "catch up" to the native scroll position
-    });
-  }, []);
+  // useLayoutEffect(() => {
+  //   ScrollSmoother.create({
+  //     smooth: 2 // how long (in seconds) it takes to "catch up" to the native scroll position
+  //   });
+  // }, []);
   return (
     <>
       {isLoading && <Preloader />}
