@@ -180,3 +180,45 @@
   top: 87%;
   left: 44%;
 }
+
+@media (max-width:1055px) {
+  .orbit1 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .orbit2 {
+    width: 280px;
+    height: 280px;
+  }
+
+  .orbit3 {
+    width: 380px;
+    height: 380px;
+  }
+}
+@media (max-width:865px) {
+  .orbit1 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .orbit2 {
+    width: 280px;
+    height: 280px;
+  }
+
+  .orbit3 {
+    width: 380px;
+    height: 380px;
+  }
+  .orbitContainer{
+    margin: 0 auto;
+  }
+}
+@media (max-width:600px) {
+    .orbitContainer {
+        // height: 580px;
+        display: none;
+    }
+}

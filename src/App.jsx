@@ -5,7 +5,7 @@ import { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap-trial";
 import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
 import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
-
+import './i18n';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 function App() {

@@ -82,8 +82,9 @@
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:865px) {
     .dashboard_main {
         flex-direction: column-reverse;
+        align-items: center;
     }
 }

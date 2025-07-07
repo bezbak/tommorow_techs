@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './adaptiveBlock.module.scss'
 import computer from './img/комп.png'
+import laptop from './img/laptop.png'
 import table from './img/планшет.png'
 import phone from './img/телефон.png'
 
@@ -19,7 +20,7 @@ const AdaptiveBlock = () => {
         setActiveButton('tablet')
         break
       case 'laptop':
-        setActiveImg(computer)
+        setActiveImg(laptop)
         setActiveButton('laptop')
         break
       case 'computer':

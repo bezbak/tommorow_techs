@@ -21,15 +21,15 @@ const AnimatedLine = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: lineRef.current,
-          start: "top 80%",
-          end: "top 10%",
+          start: "center 85%",
+          end: "center 2%",
           scrub: true,
           markers: false,
           // Очищаем триггеры при размонтировании
           onRefresh: self => self.animation && self.animation.progress(0),
           onUpdate: self => {
             if (self.direction === -1) {
-              gsap.set(lineRef.current, { height: `${100 * self.progress}%` });
+              gsap.set(lineRef.current, { height: `${100 * self.progress}px` });
             }
           }
         }

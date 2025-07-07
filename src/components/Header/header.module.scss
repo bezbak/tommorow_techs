@@ -19,6 +19,7 @@ header {
       display: flex;
       align-items: center;
       height: 30px;
+
       a {
         color: white;
         font-size: 15px;
@@ -27,6 +28,27 @@ header {
         cursor: pointer;
         transition: all linear 0.3s;
       }
+
+      .language_switcher {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        button {
+          outline: none;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          opacity: 0.6;
+          img {
+            width: 55px;
+            height: 35px;
+          }
+          &.active{
+            opacity: 1;
+          }
+        }
+      }
+
     }
 
     &_btn {
@@ -40,6 +62,7 @@ header {
       }
     }
   }
+
   .burger_btn {
     display: none;
   }
@@ -67,16 +90,19 @@ header {
         overflow: hidden;
         transition: 0.5s;
         z-index: 10;
+
         &_show {
           height: 35px;
         }
       }
+
       &_btn {
         &_button {
           display: none;
         }
       }
     }
+
     .burger_btn {
       display: block;
     }
@@ -97,12 +123,14 @@ header {
     .nav {
       max-width: 100%;
       width: 95%;
+
       &_list {
         gap: 15px;
 
         &_show {
           height: 35px;
         }
+
         a {
           font-size: 12px;
         }
