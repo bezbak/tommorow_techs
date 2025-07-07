@@ -6,7 +6,7 @@ import { useRef, useLayoutEffect, useState } from "react";
 import './i18n';
 import Preloader from "./components/Preloader/Preloader";
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+// gsap.registerPlugin(ScrollSmoother);
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useLayoutEffect(() => {
