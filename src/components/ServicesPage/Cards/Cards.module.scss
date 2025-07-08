@@ -41,7 +41,7 @@
         > p {
           color: #8a8886;
           font-family: SF Pro Display;
-          font-size: 15px;
+          font-size: 16px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
@@ -119,13 +119,13 @@
         font-size: 32px;
       }
       > p {
-        font-size: 15px;
+        font-size: 16px;
       }
       &_arguments {
         margin-top: 10px;
         > div {
           > p {
-            font-size: 15px;
+            font-size: 16px;
           }
         }
       }
@@ -149,6 +149,7 @@
     width: 500px !important;
     height: 290px;
     overflow: hidden;
+    object-fit: contain;
   }
 }
 

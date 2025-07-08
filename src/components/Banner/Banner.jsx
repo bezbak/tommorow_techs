@@ -3,7 +3,7 @@ import scss from './banner.module.scss'
 import Header from '../Header/Header'
 import Discount from '../Discount/Discount'
 import SafariDashborad from '../SafariDashboard/SafariDashboard'
-const Banner = () => {
+const Banner = ({isLoading}) => {
   return (
     <div className={` ${scss.banner}`}>
       <div className={`${scss.discount_wrap} `}>
@@ -15,7 +15,7 @@ const Banner = () => {
             perspective:'1100px'
       }
     
-      }><SafariDashborad/></div>
+      }><SafariDashborad isLoading={isLoading}/></div>
     </div>
   )
 }

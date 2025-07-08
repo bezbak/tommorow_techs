@@ -2,35 +2,45 @@ import React, { useState } from 'react'
 import styles from './adaptiveBlock.module.scss'
 import computer from './img/комп.png'
 import laptop from './img/laptop.png'
-import table from './img/планшет.png'
+import tablet from './img/планшет.png'
 import phone from './img/телефон.png'
+import Modal from 'react-modal'; // Импортируем библиотеку для модальных окон
+
+// Устанавливаем корневой элемент для модального окна (добавьте в index.html)
+Modal.setAppElement('#root');
 
 const AdaptiveBlock = () => {
   const [activeImg, setActiveImg] = useState(computer)
   const [activeButton, setActiveButton] = useState('computer')
+  const [modalIsOpen, setModalIsOpen] = useState(false); // Состояние модального окна
 
   const handleButtonClick = (device) => {
+        setActiveButton(device)
     switch (device) {
       case 'phone':
         setActiveImg(phone)
-        setActiveButton('phone')
         break
       case 'tablet':
-        setActiveImg(table)
-        setActiveButton('tablet')
+        setActiveImg(tablet)
         break
       case 'laptop':
         setActiveImg(laptop)
-        setActiveButton('laptop')
         break
       case 'computer':
         setActiveImg(computer)
-        setActiveButton('computer')
         break
       default:
         setActiveImg(computer)
-        setActiveButton('computer')
     }
+  }
+  // Открыть модальное окно
+  const openModal = () => {
+    setModalIsOpen(true);
+  }
+
+  // Закрыть модальное окно
+  const closeModal = () => {
+    setModalIsOpen(false);
   }
 
   return (
@@ -43,7 +53,13 @@ const AdaptiveBlock = () => {
         </h3>
       </div>
       <div className={styles.imageContainer}>
-        <img src={activeImg} alt='Описание изображения' className={styles.homeImg} />
+        <img
+          src={activeImg}
+          alt='Описание изображения'
+          className={styles.homeImg}
+          onClick={openModal}
+          style={{ cursor: 'pointer' }}
+        />
         <div className={styles.icons}>
           <button
             className={`${styles.icon} ${activeButton === 'phone' ? styles.active : ''}`}
@@ -99,6 +115,23 @@ const AdaptiveBlock = () => {
           </button>
         </div>
       </div>
+       <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        className={styles.modal}
+        overlayClassName={styles.overlay}
+      >
+        <div className={styles.modalContent}>
+          <button className={styles.closeButton} onClick={closeModal}>
+            &times;
+          </button>
+          <img 
+            src={activeImg} 
+            alt="Увеличенное изображение" 
+            className={styles.enlargedImage} 
+          />
+        </div>
+      </Modal>
     </div>
   )
 }

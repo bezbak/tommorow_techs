@@ -8,11 +8,11 @@ import AdaptiveBlock from '../../components/AdaptiveBlock/AdaptiveBlock'
 import Footer from '../../components/Footer/Footer'
 import Portfolio2 from '../../components/Portfolio/Portfolio2'
 
-const Beginning = () => {
+const Beginning = ({isLoading}) => {
   return (
     <div className={scss.beginning}>
       <div className={scss.relative}>
-        <Banner />
+        <Banner isLoading={isLoading} />
         <button className={scss.freeConsultation}>
           <img src={mapSrc} alt='' />
           <div>Бесплатная консультация</div>

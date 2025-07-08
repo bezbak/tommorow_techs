@@ -9,7 +9,7 @@
         border-radius: 28px;
         background: var(--green);
         color: var(--white);
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 200;
         display: flex;
         gap: 10px;
@@ -109,6 +109,8 @@
 }
 @media (max-width:500px) {
     .dashboardLeft { 
+        margin: 20px auto;
+        width: 320px;
         .dashboardLeft_btn:first-child{
             font-size: 0.55em;
             width: 150px;
@@ -123,6 +125,9 @@
         }
         .text_wrap {
             font-size: 0.8em;
+            .line_type{
+                height: 0.8em;
+            }
 
         }
     }
@@ -132,6 +137,7 @@
         width: 100%;
         h3{
             font-size: 0.7em;
+            margin-top: 18px;
         }
         .text_wrap {
             font-size: 1.32em;

@@ -37,7 +37,7 @@ const Header = () => {
           <img src={logoSrc} alt='Logo' />
         </div>
 
-        <div className={showBurger ? `${scss.nav_list} ${scss.nav_list_show}` : scss.nav_list}>
+        <div className={scss.nav_list}>
           <Link
             className={getLinkStyle('/')}
             onClick={() => setShowBurger(false)}
@@ -90,6 +90,34 @@ const Header = () => {
               <img src={kg} alt='kg' />
 
             </button>
+          </div>
+        </div>
+         <div className={`${scss.burger_overlay} ${showBurger ? scss.active : ''}`}>
+          <div className={scss.burger_menu}>
+            <Link onClick={() => setShowBurger(false)} className={getLinkStyle('/')} to='/'>
+              {t('main')}
+            </Link>
+            <Link onClick={() => setShowBurger(false)} className={getLinkStyle('/about')} to='/about'>
+              {t('about')}
+            </Link>
+            <Link onClick={() => setShowBurger(false)} className={getLinkStyle('/services')} to='/services'>
+              {t('services')}
+            </Link>
+            <Link onClick={() => setShowBurger(false)} className={getLinkStyle('/contacts')} to='/contacts'>
+              {t('contacts')}
+            </Link>
+
+            <div className={scss.language_switcher}>
+              <button onClick={() => changeLanguage('ru')} className={i18n.language === 'ru' ? scss.active : ''}>
+                <img src={ru} alt='ru' />
+              </button>
+              <button onClick={() => changeLanguage('en')} className={i18n.language === 'en' ? scss.active : ''}>
+                <img src={en} alt='en' />
+              </button>
+              <button onClick={() => changeLanguage('kg')} className={i18n.language === 'kg' ? scss.active : ''}>
+                <img src={kg} alt='kg' />
+              </button>
+            </div>
           </div>
         </div>
 

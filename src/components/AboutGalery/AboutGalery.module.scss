@@ -126,6 +126,7 @@
     .images {
       display: flex;
       justify-content: start;
+      flex-wrap: wrap;
       gap: 24px;
       margin-top: 32px;
       @media screen and (max-width: 760px) {
@@ -150,17 +151,8 @@
           height: 60px;
         }
         @media screen and (max-width: 480px) {
-          width: 45px;
-          height: 45px;
-        }
-        @media screen and (max-width: 430px) {
-          width: 40px;
-          height: 40px;
-        }
-        @media screen and (max-width: 400px) {
-          width: 36px;
-          height: 36px;
-          border-radius: 3.75px;
+          width: 22%;
+          height: 100%;
         }
       }
     }

@@ -5,6 +5,7 @@ import { useRef, useLayoutEffect, useState } from "react";
 // import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 import './i18n';
 import Preloader from "./components/Preloader/Preloader";
+import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 
 // gsap.registerPlugin(ScrollSmoother);
 function App() {
@@ -16,10 +17,11 @@ function App() {
   // }, []);
   return (
     <>
-      {isLoading && <Preloader />}
+      {isLoading && <Preloader setIsLoading={setIsLoading} />}
       {/* <div id="smooth-wrapper" className="App">
         <div id="smooth-content"> */}
-          <MainRouter />
+          <MainRouter isLoading={isLoading} />
+          <ScrollToTopButton/>
         {/* </div>
       </div> */}
     </>

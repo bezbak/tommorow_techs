@@ -135,7 +135,7 @@
       .descr {
         color: #8a8886;
         text-align: center;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
       }
     }
@@ -167,10 +167,84 @@
       }
 
       .descr {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 25px;
       }
     }
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1000;
+  border: none;
+  outline: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enlargedImage {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+  }
+}
+
+// Для мобильных устройств
+@media (max-width: 768px) {
+  .closeButton {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
   }
 }
