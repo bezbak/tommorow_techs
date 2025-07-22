@@ -32,7 +32,7 @@ header {
       .language_switcher {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 20px;
         button {
           outline: none;
           background-color: transparent;
@@ -40,8 +40,10 @@ header {
           cursor: pointer;
           opacity: 0.6;
           img {
-            width: 55px;
-            height: 35px;
+            width: 40px;
+            height: 20px;
+            object-fit: cover;
+            border-radius: 3px;
           }
           &.active{
             opacity: 1;

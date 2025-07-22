@@ -60,10 +60,6 @@ const FigmaDashboard = ({isLoading}) => {
               <div className={scss.dashboard_comment_arrow}>➤</div>
               <div className={scss.dashboard_comment_text}>Adilet</div>
             </div>
-            <div className={scss.dashboard_comment}>
-              <div className={scss.dashboard_comment_arrow}>➤</div>
-              <div className={scss.dashboard_comment_text}>PUBG777</div>
-            </div>
           </div>
           <DashboardRight />
         </div>

@@ -36,8 +36,8 @@ const Preloader = ({setIsLoading}) => {
 
       // Анимация скрытия прелоадера
       gsap.to(containerRef.current, {
-        opacity: 0,
-        duration: 0.8,
+        translateY: -999,
+        duration: 1,
         ease: "power2.out",
         onComplete: () => {
           setIsVisible(false)

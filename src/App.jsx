@@ -6,8 +6,9 @@ import { useRef, useLayoutEffect, useState } from "react";
 import './i18n';
 import Preloader from "./components/Preloader/Preloader";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
-// gsap.registerPlugin(ScrollSmoother);
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   // useLayoutEffect(() => {
@@ -18,10 +19,12 @@ function App() {
   return (
     <>
       {isLoading && <Preloader setIsLoading={setIsLoading} />}
-      {/* <div id="smooth-wrapper" className="App">
-        <div id="smooth-content"> */}
+      {/* <div id="smooth-wrapper" className="App"> */}
+        <ScrollToTop />
+
+        {/* <div id="smooth-content"> */}
           <MainRouter isLoading={isLoading} />
-          <ScrollToTopButton/>
+          <ScrollToTopButton />
         {/* </div>
       </div> */}
     </>

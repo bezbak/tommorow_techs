@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import c from './Progress.module.scss';
 import img6 from '../Image/img6.png'
 import img5 from '../Image/img5.png'
@@ -12,8 +12,54 @@ import link_img from '../Innovations/image/link_img';
 
 const Progress = () => {
   const [hoverCard, setHoverCard] = useState(0)
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const [value1, setValue1] = useState(0); // для 15
+  const [value2, setValue2] = useState(0); // для 19
+  const counterRef = useRef(null);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+          animateValue(0, 15, 1000, setValue1);
+          animateValue(0, 19, 1000, setValue2);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => {
+      if (counterRef.current) {
+        observer.unobserve(counterRef.current);
+      }
+    };
+  }, [hasAnimated]);
+
+  const animateValue = (start, end, duration, setter) => {
+    let startTimestamp = null;
+
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      setter(Math.floor(progress * (end - start) + start));
+
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      }
+    };
+
+    requestAnimationFrame(step);
+  };
+
+
   return (
-    <div className={c.parent}>
+    <div className={c.parent} ref={counterRef}>
       <div className={c.main__Progres}>
         <div className={c.main__progres__text}>
           <span>Рост потока клиентов</span>
@@ -31,7 +77,7 @@ const Progress = () => {
               <div className={c.butt_2}>Действие пользователей</div>
             </div>
             <div className={c.center}>
-              <h1>15,19k</h1>
+              <h1>{value1},{value2.toString().padStart(2, "0")}k</h1>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
                 <path d="M8 0L15.7942 13.5H0.205771L8 0Z" fill="#44E760" />
               </svg>
@@ -59,7 +105,7 @@ const Progress = () => {
                     </linearGradient>
                   </defs>
                 </svg>
-                
+
               </div>
               <div className={c.line}>
                 1.1k
@@ -97,7 +143,7 @@ const Progress = () => {
                   c.anim2 :
                   ''
                 }`}>
-                  
+
                 <div className={c.Svg_5top}>
                   <img src={link_img.magic} alt="" />
                   <span>За последние 6 месяцев</span>
@@ -198,49 +244,49 @@ const Progress = () => {
           <div className={c.card__parent}>
             <div>
               <div className={c.temporarily__divs}>
-                <div className={c.block+' '+c.c4}>
+                <div className={c.block + ' ' + c.c4}>
 
                 </div>
-                <div className={c.block+' '+c.c2}>
+                <div className={c.block + ' ' + c.c2}>
                   <img className={c.otstup} src={kelvin} alt="" />
                 </div>
-                <div className={c.block+' '+c.c1}>
+                <div className={c.block + ' ' + c.c1}>
                   <img className={c.otstup} src={gerb} alt="" />
                 </div>
-                <div className={c.block+' '+c.c2}>
+                <div className={c.block + ' ' + c.c2}>
                   <img className={c.otstup} src={led} alt="" />
                 </div>
-                <div className={c.block+' '+c.c4}>
+                <div className={c.block + ' ' + c.c4}>
 
                 </div>
-                <div className={c.block+' '+c.c3}>
+                <div className={c.block + ' ' + c.c3}>
 
                 </div>
-                <div className={c.block+' '+c.c1}>
+                <div className={c.block + ' ' + c.c1}>
                   <img className={c.otstup} src={osh} alt="" />
                 </div>
                 <div className={c.block__main}>
                   <img src={img5} alt="" />
                 </div>
-                <div className={c.block+' '+c.c1}>
+                <div className={c.block + ' ' + c.c1}>
                   <img src={img6} alt="" />
                 </div>
-                <div className={c.block+' '+c.c3}>
+                <div className={c.block + ' ' + c.c3}>
 
                 </div>
-                <div className={c.block+' '+c.c4}>
+                <div className={c.block + ' ' + c.c4}>
 
                 </div>
-                <div className={c.block+' '+c.c2}>
+                <div className={c.block + ' ' + c.c2}>
 
                 </div>
-                <div className={c.block+' '+c.c1}>
+                <div className={c.block + ' ' + c.c1}>
 
                 </div>
-                <div className={c.block+' '+c.c2}>
+                <div className={c.block + ' ' + c.c2}>
 
                 </div>
-                <div className={c.block+' '+c.c4}>
+                <div className={c.block + ' ' + c.c4}>
 
                 </div>
               </div>
@@ -251,8 +297,8 @@ const Progress = () => {
                 Сильные партнерства — ключевой элемент успеха!
               </h2>
               <p>
-                Среди наших партнеров ведущие компании и стартапы, 
-                с которыми мы сотрудничаем для создания   инновационных решений 
+                Среди наших партнеров ведущие компании и стартапы,
+                с которыми мы сотрудничаем для создания   инновационных решений
                 в сфере разработки веб-сайтов и приложений.
               </p>
 
