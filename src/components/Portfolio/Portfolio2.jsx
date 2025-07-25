@@ -38,7 +38,7 @@ const Portfolio2 = () => {
         pin: true,
         anticipatePin: 1,
         invalidateOnRefresh: true,
-        markers:true
+        // markers:true
       }
     });
   }, []);

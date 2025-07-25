@@ -17,8 +17,10 @@ const DashboardLeft = ({ isLoading }) => {
           setTimeout(() => {
             printText(text, index + 1);
           }, delay);
-        } else {
-          setShowH3(true);
+          if (index == 26) {
+            setShowH3(true);
+
+          }
         }
       };
       printText(text, 0);
