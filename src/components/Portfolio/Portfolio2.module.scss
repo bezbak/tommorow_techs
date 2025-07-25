@@ -2,11 +2,11 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 80px 20px;
-  
+
   .header {
     text-align: center;
     margin-bottom: 60px;
-    
+
     .subtitle {
       font-family: 'SF Pro Display', sans-serif;
       font-size: 42px;
@@ -19,7 +19,7 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-    
+
     .description {
       font-family: 'SF Pro Display', sans-serif;
       font-size: 20px;
@@ -35,8 +35,7 @@
 .portfolio {
   display: flex;
   gap: 40px;
-  overflow-x: auto;
-  padding: 20px 10px 40px;
+  padding: 100px 25px 40px;
   scrollbar-width: thin;
   scrollbar-color: #7153FF #0a0a0a;
 
@@ -57,23 +56,21 @@
 
   &_item {
     flex: 0 0 auto;
-    width: 85%;
-    max-width: 1100px;
+    width: 80%; 
+    max-width: 850px;
     display: flex;
     gap: 40px;
     padding: 30px;
     background: rgba(25, 25, 25, 0.6);
     border-radius: 20px;
     border: 1px solid rgba(113, 83, 255, 0.2);
-    opacity: 0;
-    transform: translateY(30px);
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    
+
     &.visible {
       opacity: 1;
       transform: translateY(0);
     }
-    
+
     &:hover {
       border-color: rgba(113, 83, 255, 0.5);
       box-shadow: 0 10px 30px rgba(113, 83, 255, 0.2);
@@ -85,7 +82,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      
+
       &_link {
         font-family: 'SF Pro Display', sans-serif;
         font-size: 16px;
@@ -98,13 +95,13 @@
         display: inline-block;
         text-decoration: none;
         transition: all 0.3s ease;
-        
+
         &:hover {
           color: #9D53FF;
           transform: translateX(5px);
         }
       }
-      
+
       &_title {
         font-family: 'SF Pro Display', sans-serif;
         font-size: 48px;
@@ -117,7 +114,7 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
       }
-      
+
       &_text {
         font-family: 'SF Pro Display', sans-serif;
         font-size: 18px;
@@ -135,18 +132,18 @@
       overflow: hidden;
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
       transition: all 0.4s ease;
-      
+
       &:hover {
         transform: scale(1.02);
         box-shadow: 0 20px 50px rgba(113, 83, 255, 0.3);
       }
-      
+
       img {
         width: 100%;
         height: auto;
         display: block;
         transition: transform 0.5s ease;
-        
+
         &:hover {
           transform: scale(1.05);
         }
@@ -158,29 +155,29 @@
 @media screen and (max-width: 1200px) {
   .portfolio_wrapper {
     padding: 60px 20px;
-    
+
     .header {
       margin-bottom: 40px;
-      
+
       .subtitle {
         font-size: 36px;
       }
-      
+
       .description {
         font-size: 18px;
         max-width: 600px;
       }
     }
   }
-  
+
   .portfolio {
     gap: 30px;
-    
+
     &_item {
       width: 90%;
       gap: 30px;
       padding: 25px;
-      
+
       &_text {
         &_title {
           font-size: 42px;
@@ -194,15 +191,15 @@
   .portfolio {
     &_item {
       flex-direction: column;
-      
+
       &_text,
       &_img {
         width: 100%;
       }
-      
+
       &_img {
         height: 400px;
-        
+
         img {
           height: 100%;
           object-fit: cover;
@@ -215,38 +212,38 @@
 @media screen and (max-width: 700px) {
   .portfolio_wrapper {
     padding: 40px 15px;
-    
+
     .header {
       margin-bottom: 30px;
-      
+
       .subtitle {
         font-size: 28px;
       }
-      
+
       .description {
         font-size: 16px;
       }
     }
   }
-  
+
   .portfolio {
     gap: 25px;
     padding: 15px 5px 30px;
-    
+
     &_item {
       width: 95%;
       padding: 20px;
-      
+
       &_text {
         &_link {
           font-size: 14px;
         }
-        
+
         &_title {
           font-size: 32px;
           margin-bottom: 15px;
         }
-        
+
         &_text {
           font-size: 16px;
         }
@@ -263,10 +260,29 @@
           font-size: 26px;
         }
       }
-      
+
       &_img {
         height: 300px;
       }
     }
   }
+}
+
+.stickyWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.overflowHidden {
+  overflow: hidden;
+  top: 30%;
+  left: 0;
+}
+
+/* сам контент, который будет «прилипать» и двигаться */
+.horizontalContent {
+  display: flex;
+  gap: 40px;
+  width: fit-content;
+  transition: transform 0.1s linear;
 }
