@@ -40,7 +40,6 @@ import mobileDevImg from '/src/components/ServicesPage/img/cards/mobile-dev.png'
 import botsImg from '/src/components/ServicesPage/img/cards/bots.png';
 import dashboardImg from '/src/components/ServicesPage/img/cards/dashboard.png';
 import photoImg from '/src/components/ServicesPage/img/cards/photo.png';
-import { Helmet } from 'react-helmet';
 
 const Services = () => {
   const sliderContent = [
@@ -65,7 +64,7 @@ const Services = () => {
       desc: 'Редизайн популярного канала в городе Ош',
     },
   ];
-
+  
   const cardsContent = [
     {
       title: 'Разработка сайта',
@@ -178,14 +177,6 @@ const Services = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Услуги — Разработка сайтов, CRM, Боты, SMM | Tomorrow-Techs</title>
-        <meta name="description" content="Все IT-услуги в одном месте: разработка сайтов, брендинг, 3D-дизайн, мобильные приложения, чат-боты, CRM-системы, таргет и SMM." />
-        <meta property="og:title" content="Услуги Tomorrow-Techs" />
-        <meta property="og:description" content="Профессиональная разработка сайтов, CRM, приложений и полное digital-сопровождение. Индивидуальный подход." />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://tomorrow-techs.com/services" />
-      </Helmet>
       <div className={scss.Services}>
         <div className={scss.relative}>
           <Header />
