@@ -7,11 +7,13 @@ import { BrowserRouter } from 'react-router-dom'
 import './modificator.scss'
 import './index.scss'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  
-    <BrowserRouter>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </BrowserRouter>
-)
+const rootElement = document.getElementById('root');
+
+ReactDOM.hydrate(
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>,
+  rootElement
+);

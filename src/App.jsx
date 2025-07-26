@@ -1,12 +1,13 @@
 import MainRouter from "./routes/MainRouter"
 import { useRef, useLayoutEffect, useState } from "react";
-import { gsap } from "gsap-trial";
-import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+import { gsap } from "gsap";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './i18n';
 import Preloader from "./components/Preloader/Preloader";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import mapSrc from './pages/Beginning/map.svg'
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 function App() {
@@ -24,8 +25,12 @@ function App() {
 
         <div id="smooth-content">
           <MainRouter isLoading={isLoading} />
-          <ScrollToTopButton />
         </div>
+        <ScrollToTopButton />
+        <button className="freeConsultation">
+          <img src={mapSrc} alt='' />
+          <div>Бесплатная консультация</div>
+        </button>
       </div>
     </>
   )

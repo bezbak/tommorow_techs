@@ -28,3 +28,24 @@ body, html{
 a{
   text-decoration: none;
 }
+
+.freeConsultation {
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  padding: 11px 22.5px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #7153ff;
+  background: #7153ff;
+
+  div {
+    color: #fff;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
